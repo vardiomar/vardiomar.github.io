@@ -3,109 +3,125 @@ layout: default
 title: Omar Vardi
 ---
 
-# Omar Vardi
+<div class="hero">
+  <h1>Omar Vardi</h1>
+  <p>Cybersecurity Specialist | GIAC Certified | U.S. Navy Veteran</p>
 
-📧 amayvardi@gmail.com  
-🔗 [LinkedIn](https://linkedin.com/in/omarvardi)  
-💻 [GitHub](https://github.com/vardiomar)
+  <a href="Omar_Resume_2026.pdf" class="btn">Download Resume</a>
+  <a href="https://github.com/vardiomar" class="btn">GitHub</a>
+  <a href="https://linkedin.com/in/omarvardi" class="btn">LinkedIn</a>
+</div>
 
 ---
+
+<div class="section-card">
 
 ## Professional Summary
 
-GIAC-certified cybersecurity professional and U.S. Navy veteran with hands-on experience in Active Directory, SIEM platforms, endpoint detection, firewall administration, and threat mitigation. Strong analytical mindset with proven ability to operate in high-pressure environments. Committed to continuous learning and strengthening IT and cybersecurity infrastructure resilience.
+GIAC-certified cybersecurity professional with hands-on experience in enterprise lab environments, detection engineering, Active Directory, SIEM operations, and endpoint security. U.S. Navy veteran with proven leadership in high-pressure environments and strong analytical problem-solving skills.
+
+</div>
 
 ---
 
-## Technical Skills
+<div class="section-card">
 
-**Operating Systems:** Windows, Linux, VMware  
-**Networking:** TCP/IP, DNS, DHCP, VLANs, VPN, pfSense  
-**Security Tools:** Splunk, Security Onion, Wireshark, Zeek, Suricata, tcpdump, Nmap, Metasploit, LimaCharlie EDR, YARA  
-**Cloud & Identity:** Microsoft 365, Entra ID  
-**Programming & Scripting:** Python, PowerShell, Bash  
-**Frameworks & Standards:** NIST 800-53, HIPAA, MITRE ATT&CK  
-**Core Areas:** Incident Response, Detection Engineering, Vulnerability Analysis, Risk Management, Log Analysis
+## Technical Proficiency
+
+<span class="badge">Windows</span>
+<span class="badge">Linux</span>
+<span class="badge">Active Directory</span>
+<span class="badge">Splunk</span>
+<span class="badge">Security Onion</span>
+<span class="badge">LimaCharlie EDR</span>
+<span class="badge">YARA</span>
+<span class="badge">MITRE ATT&CK</span>
+<span class="badge">NIST 800-53</span>
+<span class="badge">PowerShell</span>
+<span class="badge">Python</span>
+
+</div>
 
 ---
+
+<div class="section-card">
 
 ## Cybersecurity Projects
 
-### 🛡 SOC Analyst Home Lab  
-🔗 [Lab Link](https://github.com/vardiomar/SOCAnalystLab)  
+<div class="project-card">
+<h3>SOC Analyst Home Lab</h3>
+<p>Full virtualized SOC environment simulating enterprise detection and response workflows.</p>
+<ul>
+<li>Sysmon + EDR deployment</li>
+<li>C2 payload simulation</li>
+<li>Custom detection & response rules</li>
+<li>YARA malware scanning</li>
+<li>Log aggregation & SIEM integration</li>
+</ul>
+<a href="https://github.com/vardiomar/SOCAnalystLab" class="btn">View Project</a>
+</div>
 
-Built a full virtualized SOC environment simulating enterprise detection and response operations.
+<div class="project-card">
+<h3>Active Directory Enterprise Lab</h3>
+<p>Enterprise-scale AD lab with 8 virtual machines.</p>
+<ul>
+<li>Windows Server 2022 Domain Controller</li>
+<li>Splunk Enterprise + Forwarders</li>
+<li>Security Onion deployment</li>
+<li>Firewall segmentation & monitoring</li>
+<li>PowerShell automation</li>
+</ul>
+<a href="https://github.com/vardiomar" class="btn">View Repositories</a>
+</div>
 
-- Deployed Sysmon & LimaCharlie EDR
-- Generated and analyzed C2 payload activity
-- Built custom detection & response rules
-- Implemented YARA-based malware detection
-- Integrated multi-source logs into SIEM
+<div class="project-card">
+<h3>Hack The Box – SOC Path</h3>
+<p>Hands-on threat detection & investigation training.</p>
+</div>
+
+<div class="project-card">
+<h3>National Cyber League CTF challenges</h3>
+<p>Applied cryptography, forensics, OSINT, and traffic analysis in competitive challenges.</p>
+</div>
+
+</div>
 
 ---
 
-### 🏢 Active Directory Enterprise Lab  
-🔗 [Lab Link](https://github.com/vardiomar)  
+<div class="section-card">
 
-Designed an enterprise-scale Active Directory environment using 8 VMs.
+## Certifications 
+  [Credly Badges](https://www.credly.com/users/omar-vardi)
+  
+- GCIH – GIAC Certified Incident Handler  
+- GSEC – GIAC Security Essentials  
+- GISF – GIAC Information Security Fundamentals  
+- GFACT – Foundational Cybersecurity Technologies  
+- GPYC – GIAC Python Coder  
 
-- Windows Server 2022 Domain Controller deployment
-- Splunk Enterprise + Universal Forwarders
-- Security Onion deployment (Zeek, Suricata, Elastic Stack)
-- Firewall implementation & network segmentation
-- PowerShell automation & system hardening
+</div>
 
 ---
+
+<div class="section-card">
 
 ## Education
 
 **SANS Technology Institute**  
-Bachelor’s in Applied Cybersecurity (Expected Dec 2026)
+Bachelor’s in Applied Cybersecurity (Expected 2026)
 
-**Sentara College of Health Science**  
-Associate of Science – Surgical Technology (2023)
-
-**United States Navy**  
-Machinery Technician Training (2017–2021)
+</div>
 
 ---
 
-## [Certifications](https://www.credly.com/users/omar-vardi) 
-
-- GPYC – GIAC Certified Python Coder  
-- GCIH – GIAC Certified Incident Handler (DoD 8570 IAT Level III)  
-- GSEC – GIAC Security Essentials (DoD 8570 IAT Level II)  
-- GISF – GIAC Information Security Fundamentals  
-- GFACT – GIAC Foundational Cybersecurity Technologies  
-
----
+<div class="section-card">
 
 ## Professional Experience
 
-### Surgical Technologist – Virginia Beach Ambulatory Surgery Center (2023–Present)
+**U.S. Navy – Machinery Technician (2017–2021)**  
+Leadership in mission-critical operations and technical troubleshooting.
 
-- Applied risk management principles in high-stakes environments  
-- Managed sensitive data with strict confidentiality  
-- Operated advanced technical systems with precision and compliance  
+**Surgical Technologist (2023–Present)**  
+Risk management, compliance, and high-stakes operational environments.
 
-### Machinery Technician – United States Navy (2017–2021)
-
-- Led mission-critical operational teams  
-- Diagnosed and repaired complex mechanical & electrical systems  
-- Maintained detailed compliance and operational documentation  
-
-### Shift Manager – Burger King (2015–2017)
-
-- Managed high-volume operational workflows  
-- Provided customer-facing technical troubleshooting & support  
-
----
-
-## View My Work
-
-🔗 GitHub Projects: https://github.com/vardiomar  
-🔗 LinkedIn: https://linkedin.com/in/omarvardi
-
----
-
-_Thank you for visiting my portfolio._
+</div>
