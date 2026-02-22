@@ -20,6 +20,7 @@ Thank you for visiting my github.io page. This page is dedicated to document my 
 ## Technical Skills
 
 **Operating Systems:** Windows, Linux, VMware
+
 **Networking:** TCP/IP, DNS, DHCP, VLANs, VPN, pfSense
 **Security Tools:** Splunk, Security Onion, Wireshark, Zeek, Suricata, tcpdump, Nmap, Metasploit, LimaCharlie EDR, YARA
 **Cloud & Identity:** Microsoft 365, Entra ID
