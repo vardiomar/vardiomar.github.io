@@ -1,110 +1,100 @@
 ---
 layout: default
+title: Omar Vardi
 ---
 
-# Hi there!:wave: Thank you for visiting my github.io page. This page is dedicated to document my Cybersecurity journey. I have brief description of my projects and link if you want the documentation of what I build or did. Currently I am midway through the Bachelor's program at SANS Technology Institute. So far the journey has been hard and fun, but what's most important that keeps me going the my passion and curiosity for cybersecurity especially I want to niche into DFIR. 
+<div class="hero">
+  <h1>Omar Vardi</h1>
+  <p>Cybersecurity Specialist • GIAC Certified • U.S. Navy Veteran</p>
 
-📧 amayvardi@gmail.com  
-🔗 [LinkedIn](https://linkedin.com/in/omarvardi)  
-💻 [GitHub](https://github.com/vardiomar)
-
+  <a href="Omar_Resume_2026.pdf" class="btn">Download Resume</a>
+  <a href="https://github.com/vardiomar" class="btn">GitHub</a>
+  <a href="https://linkedin.com/in/omarvardi" class="btn">LinkedIn</a>
+</div>
 ---
+
+<div class="section-card">
 
 ## Professional Summary
 
-GIAC-certified cybersecurity professional and U.S. Navy veteran with hands-on lab experience in Active Directory, SIEM platforms, endpoint detection, firewall administration, and threat mitigation. Strong analytical mindset with proven ability to operate in high-pressure environments. Committed to continuous learning and strengthening IT and cybersecurity infrastructure resilience.
+GIAC-certified cybersecurity professional with hands-on experience in enterprise lab environments, detection engineering, Active Directory, SIEM operations, and endpoint security. U.S. Navy veteran with proven leadership in high-pressure environments and strong analytical problem-solving skills.
+
+</div>
 
 ---
 
-## Technical Skills
+<div class="section-card">
 
-**Operating Systems:** Windows, Linux, VMware  
-**Networking:** TCP/IP, DNS, DHCP, VLANs, VPN, pfSense  
-**Security Tools:** Splunk, Security Onion, Wireshark, Zeek, Suricata, tcpdump, Nmap, Metasploit, LimaCharlie EDR, YARA  
-**Cloud & Identity:** Microsoft 365, Entra ID  
-**Programming & Scripting:** Python, PowerShell, Bash  
-**Frameworks & Standards:** NIST 800-53, HIPAA, MITRE ATT&CK  
-**Core Areas:** Incident Response, Detection Engineering, Vulnerability Analysis, Risk Management, Log Analysis
+## Technical Expertise
 
----
+<span class="badge">Windows</span>
+<span class="badge">Linux</span>
+<span class="badge">Active Directory</span>
+<span class="badge">Splunk</span>
+<span class="badge">Security Onion</span>
+<span class="badge">LimaCharlie EDR</span>
+<span class="badge">YARA</span>
+<span class="badge">MITRE ATT&CK</span>
+<span class="badge">NIST 800-53</span>
+<span class="badge">PowerShell</span>
+<span class="badge">Python</span>
 
-## Cybersecurity Projects
-
-### 🛡 SOC Analyst Home Lab  
-🔗 [Lab Link](https://github.com/vardiomar/SOCAnalystLab)  
-
-Built a full virtualized SOC environment simulating enterprise detection and response operations.
-
-- Deployed Sysmon & LimaCharlie EDR
-- Generated and analyzed C2 payload activity
-- Built custom detection & response rules
-- Implemented YARA-based malware detection
-- Integrated multi-source logs into SIEM
+</div>
 
 ---
 
-### 🏢 Active Directory Enterprise Lab  
-🔗 [Lab Link](https://github.com/vardiomar/ADlab)  
+<div class="section-card">
 
-Designed an enterprise-scale Active Directory environment using 8 VMs.
+## GitHub Projects
 
-- Windows Server 2022 Domain Controller deployment
-- Splunk Enterprise + Universal Forwarders
-- Security Onion deployment (Zeek, Suricata, Elastic Stack)
-- Firewall implementation & network segmentation
-- PowerShell automation & system hardening
+{% assign repos = site.github.public_repositories | sort: "stargazers_count" | reverse %}
+
+{% for repo in repos limit:6 %}
+<div class="project-card">
+<h3>{{ repo.name }}</h3>
+<p>{{ repo.description }}</p>
+<a href="{{ repo.html_url }}" class="btn">View Repository</a>
+</div>
+{% endfor %}
+
+
+</div>
 
 ---
+
+<div class="section-card">
+
+## Certifications
+
+- GCIH – GIAC Certified Incident Handler  
+- GSEC – GIAC Security Essentials  
+- GISF – GIAC Information Security Fundamentals  
+- GFACT – Foundational Cybersecurity Technologies  
+- GPYC – GIAC Python Coder  
+
+</div>
+
+---
+
+<div class="section-card">
 
 ## Education
 
 **SANS Technology Institute**  
-Bachelor’s in Applied Cybersecurity (Expected Dec 2026)
+Bachelor’s in Applied Cybersecurity (Expected 2026)
 
-**Sentara College of Health Science**  
-Associate of Science – Surgical Technology (2023)
-
-**United States Navy**  
-Machinery Technician Training (2017–2021)
+</div>
 
 ---
 
-## Certifications ([Credly Badge](https://www.credly.com/users/omar-vardi))
-
-- GPYC – GIAC Certified Python Coder  
-- GCIH – GIAC Certified Incident Handler (DoD 8570 IAT Level III)  
-- GSEC – GIAC Security Essentials (DoD 8570 IAT Level II)  
-- GISF – GIAC Information Security Fundamentals  
-- GFACT – GIAC Foundational Cybersecurity Technologies  
-
----
+<div class="section-card">
 
 ## Professional Experience
 
-### Surgical Technologist – Virginia Beach Ambulatory Surgery Center (2023–Present)
+**U.S. Navy – Machinery Technician (2017–2021)**  
+Leadership in mission-critical operations and technical troubleshooting.
 
-- Applied risk management principles in high-stakes environments  
-- Managed sensitive data with strict confidentiality  
-- Operated advanced technical systems with precision and compliance  
+**Surgical Technologist (2023–Present)**  
+Risk management, compliance, and high-stakes operational environments.
 
-### Machinery Technician – United States Navy (2017–2021)
-
-- Led mission-critical operational teams  
-- Diagnosed and repaired complex mechanical & electrical systems  
-- Maintained detailed compliance and operational documentation  
-
-### Shift Manager – Burger King (2015–2017)
-
-- Managed high-volume operational workflows  
-- Provided customer-facing technical troubleshooting & support  
-
----
-
-## View My Work
-
-🔗 GitHub Projects: https://github.com/vardiomar  
-🔗 LinkedIn: https://linkedin.com/in/omarvardi
-
----
-
-_Thank you for visiting my portfolio._
+</div>
