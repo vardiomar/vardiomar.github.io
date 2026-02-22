@@ -3,8 +3,6 @@ layout: default
 title: Omar Vardi
 ---
 
-# Omar Vardi
-
 📧 amayvardi@gmail.com  
 🔗 [LinkedIn](https://linkedin.com/in/omarvardi)  
 💻 [GitHub](https://github.com/vardiomar)  
@@ -14,7 +12,8 @@ title: Omar Vardi
 
 ## Introduction
 
-Hi there!:wave: Thank you for visiting my github.io page. This page is dedicated to document my Cybersecurity journey. In this page I have brief description or explanation of my projects and it's links if you want the full documentation of what I built or did. Currently I am midway through the Bachelor's program at SANS Technology Institute. So far the journey has been hard and fun, but what's most important that keeps me going is my passion and curiosity for cybersecurity especially now that I am wanting to niche into DFIR.
+Hi there! 
+Thank you for visiting my github.io page. This page is dedicated to document my Cybersecurity journey. In this page I have brief description or explanation of my projects and it's links if you want the full documentation of what I built or did. Currently I am midway through the Bachelor's program at SANS Technology Institute. So far the journey has been hard and fun, but what's most important that keeps me going is my passion and curiosity for cybersecurity especially now that I am wanting to niche into DFIR.
 
 ---
 
