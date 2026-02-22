@@ -47,9 +47,9 @@ GIAC-certified cybersecurity professional with hands-on experience in enterprise
 
 ## GitHub Projects
 
-{% assign repos = site.github.public_repositories | sort: "stargazers_count" | reverse %}
+{% if site.github.public_repositories %}
 
-{% for repo in repos limit:6 %}
+{% for repo in site.github.public_repositories limit:6 %}
 <div class="project-card">
 <h3>{{ repo.name }}</h3>
 <p>{{ repo.description }}</p>
@@ -57,6 +57,12 @@ GIAC-certified cybersecurity professional with hands-on experience in enterprise
 </div>
 {% endfor %}
 
+{% else %}
+
+<p>Visit my GitHub to view my latest projects:</p>
+<a href="https://github.com/vardiomar" class="btn">View GitHub</a>
+
+{% endif %}
 
 </div>
 
