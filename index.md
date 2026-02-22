@@ -5,7 +5,6 @@ title: Omar Vardi
 
 # Omar Vardi
 
-📞 702-374-7568  
 📧 amayvardi@gmail.com  
 🔗 [LinkedIn](https://linkedin.com/in/omarvardi)  
 💻 [GitHub](https://github.com/vardiomar)
@@ -14,7 +13,7 @@ title: Omar Vardi
 
 ## Professional Summary
 
-GIAC-certified cybersecurity professional and U.S. Navy veteran with hands-on experience in Active Directory, SIEM platforms, endpoint detection, firewall administration, and threat mitigation. Strong analytical mindset with proven ability to operate in high-pressure environments. Committed to continuous learning and strengthening IT and cybersecurity infrastructure resilience.
+GIAC-certified cybersecurity professional and U.S. Navy veteran with hands-on lab experience in Active Directory, SIEM platforms, endpoint detection, firewall administration, and threat mitigation. Strong analytical mindset with proven ability to operate in high-pressure environments. Committed to continuous learning and strengthening IT and cybersecurity infrastructure resilience.
 
 ---
 
@@ -33,7 +32,7 @@ GIAC-certified cybersecurity professional and U.S. Navy veteran with hands-on ex
 ## Cybersecurity Projects
 
 ### 🛡 SOC Analyst Home Lab  
-🔗 https://github.com/vardiomar/SOCAnalystLab  
+🔗 [Lab Link](https://github.com/vardiomar/SOCAnalystLab)  
 
 Built a full virtualized SOC environment simulating enterprise detection and response operations.
 
@@ -46,7 +45,7 @@ Built a full virtualized SOC environment simulating enterprise detection and res
 ---
 
 ### 🏢 Active Directory Enterprise Lab  
-🔗 https://github.com/vardiomar  
+🔗 [Lab Link](https://github.com/vardiomar/ADlab)  
 
 Designed an enterprise-scale Active Directory environment using 8 VMs.
 
@@ -55,28 +54,6 @@ Designed an enterprise-scale Active Directory environment using 8 VMs.
 - Security Onion deployment (Zeek, Suricata, Elastic Stack)
 - Firewall implementation & network segmentation
 - PowerShell automation & system hardening
-
----
-
-### 🏆 National Cyber League (NCL) 2025  
-Applied skills in:
-
-- Network traffic analysis
-- Cryptography
-- Digital forensics
-- OSINT investigations
-- CTF-style cybersecurity challenges
-
----
-
-### 🎯 Hack The Box – SOC Analyst Path  
-Completed structured hands-on training in:
-
-- SIEM log analysis
-- Threat hunting
-- Malware analysis
-- MITRE ATT&CK mapping
-- Incident response workflows
 
 ---
 
@@ -93,14 +70,13 @@ Machinery Technician Training (2017–2021)
 
 ---
 
-## Certifications
+## Certifications ([Credly Badge](https://www.credly.com/users/omar-vardi))
 
+- GPYC – GIAC Certified Python Coder  
 - GCIH – GIAC Certified Incident Handler (DoD 8570 IAT Level III)  
 - GSEC – GIAC Security Essentials (DoD 8570 IAT Level II)  
 - GISF – GIAC Information Security Fundamentals  
 - GFACT – GIAC Foundational Cybersecurity Technologies  
-- GPYC – GIAC Python Coder  
-- CompTIA Security+ equivalent (GSEC)
 
 ---
 
