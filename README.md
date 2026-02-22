@@ -1,4 +1,4 @@
-# amay0mar.github.io
+
 <h1>SOC Analyst Home Lab</h1>
 
 
