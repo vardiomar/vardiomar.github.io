@@ -5,8 +5,6 @@ title: Omar Vardi
 
 # Omar Vardi
 
-Cybersecurity Specialist | GIAC Certified | U.S. Navy Veteran  
-
 📧 amayvardi@gmail.com  
 🔗 [LinkedIn](https://linkedin.com/in/omarvardi)  
 💻 [GitHub](https://github.com/vardiomar)  
@@ -14,87 +12,101 @@ Cybersecurity Specialist | GIAC Certified | U.S. Navy Veteran
 
 ---
 
-## Professional Summary
+## Introduction
 
-GIAC-certified cybersecurity professional and U.S. Navy veteran with hands-on experience in Active Directory, SIEM platforms, endpoint detection, firewall administration, and threat mitigation. Strong analytical mindset with proven ability to operate in high-pressure environments. Committed to continuous learning and strengthening IT and cybersecurity infrastructure resilience.
+Hi there!:wave: Thank you for visiting my github.io page. This page is dedicated to document my Cybersecurity journey. In this page I have brief description or explanation of my projects and it's links if you want the full documentation of what I built or did. Currently I am midway through the Bachelor's program at SANS Technology Institute. So far the journey has been hard and fun, but what's most important that keeps me going is my passion and curiosity for cybersecurity especially now that I am wanting to niche into DFIR.
 
 ---
 
 ## Technical Skills
 
-**Operating Systems:** Windows, Linux, VMware  
-**Networking:** TCP/IP, DNS, DHCP, VLANs, VPN, pfSense  
-**Security Tools:** Splunk, Security Onion, Wireshark, Zeek, Suricata, tcpdump, Nmap, Metasploit, LimaCharlie EDR, YARA  
-**Cloud & Identity:** Microsoft 365, Entra ID  
-**Programming:** Python, PowerShell, Bash  
-**Frameworks:** NIST 800-53, MITRE ATT&CK, HIPAA  
-**Core Areas:** Incident Response, Detection Engineering, Threat Hunting, Log Analysis, Risk Management  
+**Operating Systems:** Windows, Linux, VMware
+**Networking:** TCP/IP, DNS, DHCP, VLANs, VPN, pfSense
+**Security Tools:** Splunk, Security Onion, Wireshark, Zeek, Suricata, tcpdump, Nmap, Metasploit, LimaCharlie EDR, YARA
+**Cloud & Identity:** Microsoft 365, Entra ID
+**Programming & Scripting:** Python, PowerShell, Bash
+**Frameworks & Standards:** NIST 800-53, HIPAA, MITRE ATT&CK
+**Core Areas:** Incident Response, Detection Engineering, Vulnerability Analysis, Risk Management, Log Analysis
 
 ---
 
-## Selected Cybersecurity Projects
+## Cybersecurity Projects
 
-### SOC Analyst Home Lab  
-🔗 https://github.com/vardiomar/SOCAnalystLab  
+### 🛡 SOC Analyst Home Lab
+🔗 [Lab Link](https://github.com/vardiomar/SOCAnalystLab)
 
-- Built virtual SOC lab (Windows + Linux + Kali)  
-- Deployed Sysmon & LimaCharlie EDR  
-- Simulated C2 payload activity  
-- Built detection & response rules  
-- Implemented YARA malware detection  
+Built a full virtualized SOC environment simulating enterprise detection and response operations.
 
----
-
-### Active Directory Enterprise Lab  
-
-- Designed 8-VM enterprise AD environment  
-- Deployed Windows Server 2022 Domain Controller  
-- Implemented Splunk Enterprise & Forwarders  
-- Deployed Security Onion (Zeek, Suricata, Elastic)  
-- Configured firewall segmentation & monitoring  
+- Deployed Sysmon & LimaCharlie EDR
+- Generated and analyzed C2 payload activity
+- Built custom detection & response rules
+- Implemented YARA-based malware detection
+- Integrated multi-source logs into SIEM
 
 ---
 
-### National Cyber League (2025)
+### 🏢 Active Directory Enterprise Lab
+🔗 [Lab Link](https://github.com/vardiomar/ADlab)
 
-- Applied network analysis, forensics, cryptography & OSINT  
-- Used Wireshark, Hashcat, Autopsy, CyberChef  
+Designed an enterprise-scale Active Directory environment using 8 VMs.
 
----
-
-### Hack The Box – SOC Path
-
-- SIEM analysis & log correlation  
-- MITRE ATT&CK mapping  
-- Threat hunting & malware analysis  
-- Incident response workflows  
-
----
-
-## Certifications
-
-- GCIH – GIAC Certified Incident Handler (DoD 8570 IAT Level III)  
-- GSEC – GIAC Security Essentials (DoD 8570 IAT Level II)  
-- GISF – GIAC Information Security Fundamentals  
-- GFACT – GIAC Foundational Cybersecurity Technologies  
-- GPYC – GIAC Python Coder  
+- Windows Server 2022 Domain Controller deployment
+- Splunk Enterprise + Universal Forwarders
+- Security Onion deployment (Zeek, Suricata, Elastic Stack)
+- Firewall implementation & network segmentation
+- PowerShell automation & system hardening
 
 ---
 
 ## Education
 
-**SANS Technology Institute**  
+**SANS Technology Institute**
 Bachelor’s in Applied Cybersecurity (Expected Dec 2026)
+
+**Sentara College of Health Science**
+Associate of Science – Surgical Technology (2023)
+
+**United States Navy**
+Machinery Technician Training (2017–2021)
+
+---
+
+## Certifications ([Credly Badge](https://www.credly.com/users/omar-vardi))
+
+- GPYC – GIAC Certified Python Coder
+- GCIH – GIAC Certified Incident Handler (DoD 8570 IAT Level III)
+- GSEC – GIAC Security Essentials (DoD 8570 IAT Level II)
+- GISF – GIAC Information Security Fundamentals
+- GFACT – GIAC Foundational Cybersecurity Technologies
 
 ---
 
 ## Professional Experience
 
-**Surgical Technologist – Virginia Beach Ambulatory Surgery Center (2023–Present)**  
-Applied risk management and compliance practices in high-stakes environments.
+### Surgical Technologist – Virginia Beach Ambulatory Surgery Center (2023–Present)
 
-**Machinery Technician – United States Navy (2017–2021)**  
-Led mission-critical technical operations and troubleshooting teams.
+- Applied risk management principles in high-stakes environments
+- Managed sensitive data with strict confidentiality
+- Operated advanced technical systems with precision and compliance
 
-**Shift Manager – Burger King (2015–2017)**  
-Managed operational workflows and customer-facing support environments.
+### Machinery Technician – United States Navy (2017–2021)
+
+- Led mission-critical operational teams
+- Diagnosed and repaired complex mechanical & electrical systems
+- Maintained detailed compliance and operational documentation
+
+### Shift Manager – Burger King (2015–2017)
+
+- Managed high-volume operational workflows
+- Provided customer-facing technical troubleshooting & support
+
+---
+
+## View My Work
+
+🔗 GitHub Projects: https://github.com/vardiomar
+🔗 LinkedIn: https://linkedin.com/in/omarvardi
+
+---
+
+_Thank you for visiting my portfolio._
