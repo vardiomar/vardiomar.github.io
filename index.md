@@ -1,9 +1,8 @@
 ---
 layout: default
-title: Omar Vardi
 ---
 
-# Omar Vardi
+# Hi there!:wave: Thank you for visiting my github.io page. This page is dedicated to document my Cybersecurity journey. I have brief description of my projects and link if you want the documentation of what I build or did. Currently I am midway through the Bachelor's program at SANS Technology Institute. So far the journey has been hard and fun, but what's most important that keeps me going the my passion and curiosity for cybersecurity especially I want to niche into DFIR. 
 
 📧 amayvardi@gmail.com  
 🔗 [LinkedIn](https://linkedin.com/in/omarvardi)  
