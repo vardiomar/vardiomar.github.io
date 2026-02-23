@@ -3,16 +3,18 @@ layout: default
 title: Projects
 ---
 
-## Table of Contents
 
-- [SOC Analyst Home Lab](#soc-analyst-home-lab)
-- [Active Directory Enterprise Lab](#active-directory-enterprise-lab)
-- [HTB Sherlock: Campfire Investigation](#hack-the-box--sherlock-campfire-investigation-part-i--ii)
+## Quick Navigation
+
+- [SOC Analyst Home Lab](#soc-lab)
+- [Active Directory Enterprise Lab](#ad-lab)
+- [HTB Sherlock – Campfire Investigation](#campfire)
 
 ---
 ## Cybersecurity Projects
 
 ### 🛡️ SOC Analyst Home Lab
+<a id="soc-lab"></a>
 🔗 [Lab Repository](https://github.com/vardiomar/SOCAnalystLab)
 
 **Situation:**
@@ -35,6 +37,7 @@ Successfully detected simulated credential dumping and destructive behavior, val
 ---
 
 ### 🏢 Active Directory Enterprise Lab
+<a id="ad-lab"></a>
 🔗 [Lab Repository](https://github.com/vardiomar/ADlab)
 
 **Situation:**
@@ -56,6 +59,7 @@ Created a scalable detection environment capable of correlating endpoint, networ
 
 ---
 ### 🔎 Hack The Box – Sherlock: Campfire Investigation (Part I & II) ![Splunk](https://img.shields.io/badge/Splunk-000000?style=flat-square&logo=splunk&logoColor=FFE019)
+<a id="campfire"></a>
 
 🔗 [Campfire Part I](https://github.com/vardiomar/HTB-Campfire-1)
 
