@@ -53,7 +53,8 @@ Simulated adversary behavior using Metasploit and Sliver C2 frameworks to unders
 
 ## Cybersecurity Projects
 
-### 🛡 SOC Analyst Home Lab
+### 🛡️ SOC Analyst Home Lab
+![SOC Analyst](https://img.shields.io/badge/SOC%20Analyst-Security%20Operations-red?style=for-the-badge&logo=target&logoColor=white)
 🔗 [Lab Repository](https://github.com/vardiomar/SOCAnalystLab)
 
 **Situation:**
