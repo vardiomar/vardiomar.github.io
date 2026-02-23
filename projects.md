@@ -88,7 +88,6 @@ Analyze host, authentication, and network artifacts to determine the attack time
 Successfully reconstructed the adversary timeline, identified compromised accounts and suspicious logon activity, and demonstrated the ability to perform structured forensic analysis in a simulated enterprise environment.
 
 
----
-
 <p align="right"><a href="#top">⬆ Back to Top</a></p>
 
+---
