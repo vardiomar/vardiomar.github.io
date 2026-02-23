@@ -5,6 +5,8 @@ title: Projects
 
 {% include nav.html %}
 
+<a id="top"></a>
+
 ## Quick Navigation
 
 - [SOC Analyst Home Lab](#soc-lab)
@@ -87,3 +89,6 @@ Successfully reconstructed the adversary timeline, identified compromised accoun
 
 
 ---
+
+<p align="right"><a href="#top">⬆ Back to Top</a></p>
+
