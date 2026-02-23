@@ -27,6 +27,10 @@ Thank you for visiting my github.io page. This page is dedicated to document my 
 ## Technical Skills
  
 **Operating Systems & Virtualization:**
+![Windows Server](https://img.shields.io/badge/Windows%20Server-0078D6?style=flat-square&logo=windows-server&logoColor=white)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white)
+![Kali Linux](https://img.shields.io/badge/Kali%20Linux-557C94?style=flat-square&logo=kali-linux&logoColor=white)
+![VMware](https://img.shields.io/badge/VMware-607078?style=flat-square&logo=vmware&logoColor=white)
 
 Designed and administered multi-VM lab environments using Windows Server 2022, Windows 10, Ubuntu Server, and Kali Linux to simulate enterprise infrastructures. Built domain-controlled environments and hardened systems using Group Policy, registry configurations, and PowerShell automation to improve endpoint visibility and reduce attack surface.
 
@@ -35,6 +39,10 @@ Designed and administered multi-VM lab environments using Windows Server 2022, W
 Configured segmented virtual networks using TCP/IP, VLANs, DNS, DHCP, and pfSense firewall configurations to replicate enterprise network architecture. Implemented firewall rules and monitored traffic flows using packet analysis tools to detect anomalies, unauthorized access attempts, and command-and-control activity.
 
 **Security Monitoring & Threat Detection:**
+![Splunk](https://img.shields.io/badge/Splunk-000000?style=flat-square&logo=splunk&logoColor=FFE019)
+![Elastic Stack](https://img.shields.io/badge/Elastic%20Stack-005571?style=flat-square&logo=elastic-stack&logoColor=white)
+![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
+![Metasploit](https://img.shields.io/badge/Metasploit-FF4400?style=flat-square&logo=metasploit&logoColor=white)
 
 Deployed and configured Splunk, Security Onion (Zeek, Suricata, Elastic Stack), Sysmon, and LimaCharlie EDR to centralize logs and monitor endpoint telemetry.
 - Built detection rules aligned to MITRE ATT&CK techniques
