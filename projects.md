@@ -15,6 +15,7 @@ title: Projects
 
 ### 🛡️ SOC Analyst Home Lab
 <a id="soc-lab"></a>
+
 🔗 [Lab Repository](https://github.com/vardiomar/SOCAnalystLab)
 
 **Situation:**
@@ -38,6 +39,7 @@ Successfully detected simulated credential dumping and destructive behavior, val
 
 ### 🏢 Active Directory Enterprise Lab
 <a id="ad-lab"></a>
+
 🔗 [Lab Repository](https://github.com/vardiomar/ADlab)
 
 **Situation:**
