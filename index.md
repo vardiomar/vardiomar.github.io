@@ -101,8 +101,10 @@ Created a scalable detection environment capable of correlating endpoint, networ
 
 **SANS Technology Institute**
 Bachelor’s in Applied Cybersecurity (Expected Dec 2026)
+
 **Sentara College of Health Science**
 Associate of Science – Surgical Technology (2023)
+
 **United States Navy**
 Machinery Technician Training (2017–2021)
 
