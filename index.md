@@ -18,43 +18,72 @@ Thank you for visiting my github.io page. This page is dedicated to document my 
 ---
 
 ## Technical Skills
+ 
+**Operating Systems & Virtualization:**
 
-**Operating Systems:** Windows, Linux, VMware
+Designed and administered multi-VM lab environments using Windows Server 2022, Windows 10, Ubuntu Server, and Kali Linux to simulate enterprise infrastructures. Built domain-controlled environments and hardened systems using Group Policy, registry configurations, and PowerShell automation to improve endpoint visibility and reduce attack surface.
 
-**Networking:** TCP/IP, DNS, DHCP, VLANs, VPN, pfSense
-**Security Tools:** Splunk, Security Onion, Wireshark, Zeek, Suricata, tcpdump, Nmap, Metasploit, LimaCharlie EDR, YARA
-**Cloud & Identity:** Microsoft 365, Entra ID
-**Programming & Scripting:** Python, PowerShell, Bash
-**Frameworks & Standards:** NIST 800-53, HIPAA, MITRE ATT&CK
-**Core Areas:** Incident Response, Detection Engineering, Vulnerability Analysis, Risk Management, Log Analysis
+**Networking & Infrastructure Security:**
+
+Configured segmented virtual networks using TCP/IP, VLANs, DNS, DHCP, and pfSense firewall configurations to replicate enterprise network architecture. Implemented firewall rules and monitored traffic flows using packet analysis tools to detect anomalies, unauthorized access attempts, and command-and-control activity.
+
+**Security Monitoring & Threat Detection:**
+
+Deployed and configured Splunk, Security Onion (Zeek, Suricata, Elastic Stack), Sysmon, and LimaCharlie EDR to centralize logs and monitor endpoint telemetry.
+- Built detection rules aligned to MITRE ATT&CK techniques
+- Investigated simulated C2 beaconing and credential dumping activity
+- Tuned detection logic to reduce false positives
+- Correlated multi-source logs for incident validation
+
+**Endpoint & Malware Analysis:**
+
+Simulated adversary behavior using Metasploit and Sliver C2 frameworks to understand attacker tradecraft. Leveraged YARA signatures to automate malware identification across endpoints and memory scans. Analyzed process trees, network connections, and suspicious binaries to identify persistence mechanisms and privilege escalation attempts.
 
 ---
 
 ## Cybersecurity Projects
 
 ### 🛡 SOC Analyst Home Lab
-🔗 [Lab Link](https://github.com/vardiomar/SOCAnalystLab)
+🔗 [Lab Repository](https://github.com/vardiomar/SOCAnalystLab)
 
-Built a full virtualized SOC environment simulating enterprise detection and response operations.
+**Situation:**
+Designed a controlled lab environment to simulate real-world enterprise attack and defense scenarios.
 
-- Deployed Sysmon & LimaCharlie EDR
-- Generated and analyzed C2 payload activity
-- Built custom detection & response rules
-- Implemented YARA-based malware detection
-- Integrated multi-source logs into SIEM
+**Task:**
+Build a functional SOC environment capable of detecting, analyzing, and responding to advanced adversary techniques.
+
+**Actions:**
+- Deployed Windows and Linux virtual machines to simulate enterprise endpoints and attacker systems
+- Installed and configured Sysmon to enhance endpoint telemetry collection
+- Implemented LimaCharlie EDR for centralized endpoint monitoring and detection
+- Generated custom C2 payloads using Sliver to emulate attacker tradecraft
+- Crafted detection & response rules for credential dumping (LSASS access) and shadow copy deletion
+- Integrated YARA scanning for automated malware signature detection
+
+**Result:**
+Successfully detected simulated credential dumping and destructive behavior, validated detection rules against live attack telemetry, and improved understanding of endpoint visibility and response workflows.
 
 ---
 
 ### 🏢 Active Directory Enterprise Lab
-🔗 [Lab Link](https://github.com/vardiomar/ADlab)
+🔗 [Lab Repository](https://github.com/vardiomar/ADlab)
 
-Designed an enterprise-scale Active Directory environment using 8 VMs.
+**Situation:**
+Built an enterprise-scale Active Directory lab to understand identity management, domain security, and centralized logging.
 
-- Windows Server 2022 Domain Controller deployment
-- Splunk Enterprise + Universal Forwarders
-- Security Onion deployment (Zeek, Suricata, Elastic Stack)
-- Firewall implementation & network segmentation
-- PowerShell automation & system hardening
+**Task:**
+Simulate enterprise IT infrastructure with centralized authentication, logging, and network monitoring.
+
+**Actions:**
+- Deployed Windows Server 2022 Domain Controller and configured Active Directory services
+- Created user groups, applied Group Policy Objects (GPOs), and enforced least privilege access
+- Deployed Splunk Enterprise with Universal Forwarders for centralized log ingestion
+- Installed Security Onion with Zeek and Suricata for network intrusion detection
+- Configured firewall rules and network segmentation using pfSense
+- Used PowerShell automation for system configuration and policy enforcement
+
+**Result:**
+Created a scalable detection environment capable of correlating endpoint, network, and authentication logs to identify suspicious behavior and reduce security blind spots.
 
 ---
 
