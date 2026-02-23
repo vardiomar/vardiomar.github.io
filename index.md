@@ -5,8 +5,15 @@ title: Omar Vardi
 
 📧 amayvardi@gmail.com  
 🔗 [LinkedIn](https://linkedin.com/in/omarvardi)  
-💻 [GitHub](https://github.com/vardiomar)  
+💻 :octocat: [GitHub](https://github.com/vardiomar)  
 📄 [Download Resume](Omar_Resume_2026.pdf)
+
+---
+# 📨 Contact & Links
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=icloud&logoColor=white)](mailto:amayvardi@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/omarvardi)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vardiomar)
+[![Resume](https://img.shields.io/badge/Resume-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](Omar_Resume_2026.pdf)
 
 ---
 
