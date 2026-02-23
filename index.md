@@ -58,10 +58,8 @@ Simulated adversary behavior using Metasploit and Sliver C2 frameworks to unders
 
 **Situation:**
 Designed a controlled lab environment to simulate real-world enterprise attack and defense scenarios.
-
 **Task:**
 Build a functional SOC environment capable of detecting, analyzing, and responding to advanced adversary techniques.
-
 **Actions:**
 - Deployed Windows and Linux virtual machines to simulate enterprise endpoints and attacker systems
 - Installed and configured Sysmon to enhance endpoint telemetry collection
@@ -69,7 +67,6 @@ Build a functional SOC environment capable of detecting, analyzing, and respondi
 - Generated custom C2 payloads using Sliver to emulate attacker tradecraft
 - Crafted detection & response rules for credential dumping (LSASS access) and shadow copy deletion
 - Integrated YARA scanning for automated malware signature detection
-
 **Result:**
 Successfully detected simulated credential dumping and destructive behavior, validated detection rules against live attack telemetry, and improved understanding of endpoint visibility and response workflows.
 
@@ -80,10 +77,8 @@ Successfully detected simulated credential dumping and destructive behavior, val
 
 **Situation:**
 Built an enterprise-scale Active Directory lab to understand identity management, domain security, and centralized logging.
-
 **Task:**
 Simulate enterprise IT infrastructure with centralized authentication, logging, and network monitoring.
-
 **Actions:**
 - Deployed Windows Server 2022 Domain Controller and configured Active Directory services
 - Created user groups, applied Group Policy Objects (GPOs), and enforced least privilege access
@@ -91,7 +86,6 @@ Simulate enterprise IT infrastructure with centralized authentication, logging, 
 - Installed Security Onion with Zeek and Suricata for network intrusion detection
 - Configured firewall rules and network segmentation using pfSense
 - Used PowerShell automation for system configuration and policy enforcement
-
 **Result:**
 Created a scalable detection environment capable of correlating endpoint, network, and authentication logs to identify suspicious behavior and reduce security blind spots.
 
@@ -101,10 +95,8 @@ Created a scalable detection environment capable of correlating endpoint, networ
 
 **SANS Technology Institute**
 Bachelor’s in Applied Cybersecurity (Expected Dec 2026)
-
 **Sentara College of Health Science**
 Associate of Science – Surgical Technology (2023)
-
 **United States Navy**
 Machinery Technician Training (2017–2021)
 
@@ -112,30 +104,25 @@ Machinery Technician Training (2017–2021)
 
 ## Certifications ([Credly Badge](https://www.credly.com/users/omar-vardi))
 
-- GPYC – GIAC Certified Python Coder
-- GCIH – GIAC Certified Incident Handler (DoD 8570 IAT Level III)
-- GSEC – GIAC Security Essentials (DoD 8570 IAT Level II)
-- GISF – GIAC Information Security Fundamentals
-- GFACT – GIAC Foundational Cybersecurity Technologies
+- **GPYC** – GIAC Certified Python Coder
+- **GCIH** – GIAC Certified Incident Handler (DoD 8570 IAT Level III)
+- **GSEC** – GIAC Security Essentials (DoD 8570 IAT Level II)
+- **GISF** – GIAC Information Security Fundamentals
+- **GFACT** – GIAC Foundational Cybersecurity Technologies
 
 ---
 
 ## Professional Experience
 
-### Surgical Technologist – Virginia Beach Ambulatory Surgery Center (2023–Present)
-
+**Surgical Technologist – Virginia Beach Ambulatory Surgery Center (2023–Present)**
 - Applied risk management principles in high-stakes environments
 - Managed sensitive data with strict confidentiality
 - Operated advanced technical systems with precision and compliance
-
-### Machinery Technician – United States Navy (2017–2021)
-
+**Machinery Technician – United States Navy (2017–2021)**
 - Led mission-critical operational teams
 - Diagnosed and repaired complex mechanical & electrical systems
 - Maintained detailed compliance and operational documentation
-
-### Shift Manager – Burger King (2015–2017)
-
+**Shift Manager – Burger King (2015–2017)**
 - Managed high-volume operational workflows
 - Provided customer-facing technical troubleshooting & support
 
