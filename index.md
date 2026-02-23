@@ -3,13 +3,16 @@ layout: default
 title: Omar Vardi
 --- 
 
+---
 
 # 📨 Contact & Links
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=icloud&logoColor=white)](mailto:amayvardi@gmail.com)
+<a id="contact"></a>
+
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:amayvardi@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/omarvardi)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vardiomar)
-[![Resume](https://img.shields.io/badge/Resume-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](Omar_Resume_2026.pdf)
-
+[![Resume](https://img.shields.io/badge/Resume-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](/Omar_Resume_2026.pdf)
+[![Projects](https://img.shields.io/badge/Projects-0A66C2?style=for-the-badge&logo=readthedocs&logoColor=white)](/projects)
 ---
 
 ## Introduction
