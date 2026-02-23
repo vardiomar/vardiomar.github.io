@@ -19,6 +19,20 @@ Thank you for visiting my github.io page. This page is dedicated to document my 
 
 ---
 
+## Table of Contents
+
+- [Applied Skills](#technical-skills)
+- [Cybersecurity Projects](#cybersecurity-projects)
+  - [SOC Analyst Home Lab](#soc-analyst-home-lab)
+  - [Active Directory Enterprise Lab](#active-directory-enterprise-lab)
+  - [HTB Sherlock: Campfire Investigation](#hack-the-box--sherlock-campfire-investigation-part-i--ii)
+- [Certifications](#certifications)
+- [Education](#education)
+- [Professional Experience](#professional-experience)
+
+
+---
+
 ## Technical Skills
  
 **Operating Systems & Virtualization:**
@@ -96,7 +110,7 @@ Simulate enterprise IT infrastructure with centralized authentication, logging, 
 Created a scalable detection environment capable of correlating endpoint, network, and authentication logs to identify suspicious behavior and reduce security blind spots.
 
 ---
-### 🔎 Hack The Box – Sherlock: Campfire Investigation (Part I & II)
+### 🔎 Hack The Box – Sherlock: Campfire Investigation (Part I & II) ![Splunk](https://img.shields.io/badge/Splunk-000000?style=flat-square&logo=splunk&logoColor=FFE019)
 
 🔗 [Campfire Part I](https://github.com/vardiomar/HTB-Campfire-1)
 
