@@ -22,7 +22,7 @@ defaults:
       layout: page
 
 navigation_header:
-  - title: Home
+  - title: Omar Vardi
     url: /
   - title: Projects
     url: /projects/
