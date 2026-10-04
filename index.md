@@ -1,10 +1,6 @@
 ---
-layout: default
+layout: page
 title: Omar Vardi
---- 
-
-{% include nav.html %}
-
 ---
 
 # 📨 Contact & Links
