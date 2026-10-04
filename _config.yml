@@ -1,6 +1,7 @@
 title: Omar Vardi
 description: Cybersecurity Specialist | GIAC Certified | U.S. Navy Veteran
 url: https://vardiomar.github.io
+permalink: pretty
 remote_theme: daviddarnes/alembic@main
 
 plugins:
