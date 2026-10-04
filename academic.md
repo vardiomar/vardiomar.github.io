@@ -1,13 +1,9 @@
 ---
-layout: default
+layout: page
 title: Academic Work
 ---
 
-{% include nav.html %}
-
 <a id="top"></a>
-
-
 ## Overview
 <a id="overview"></a>
 
