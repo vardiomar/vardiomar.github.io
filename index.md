@@ -19,7 +19,7 @@ feature_text: |
 ## Introduction
 
 Hi there! 
-Thank you for visiting my github.io page. This page is dedicated to document my Cybersecurity journey. In this page I have brief description or explanation of my projects and it's links if you want the full documentation of what I built or did. Currently I am midway through the Bachelor's program at SANS Technology Institute. So far the journey has been hard and fun, but what's most important that keeps me going is my passion and curiosity for cybersecurity especially now that I am looking to niche into DFIR.
+Thank you for visiting my GitHub.io page. This page documents my Cybersecurity journey. On this page, I provide brief descriptions of my projects and links to the full documentation for what I built or did. I recently transferred from SANS Technology, where I earned multiple GIAC certifications, and I am now a junior at Old Dominion University. So far the journey has been hard and fun, but what's most important that keeps me going is my passion and curiosity for cybersecurity especially now that I am looking to niche into DFIR.
 
 ---
 
