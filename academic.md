@@ -11,7 +11,7 @@ title: Academic Work
 ## Overview
 <a id="overview"></a>
 
-Write-ups, papers, and coursework from my Bachelor's in Applied Cybersecurity at the SANS Technology Institute (expected Dec 2026). Each entry includes a short summary and a link to the full document.
+Write-ups, papers, and coursework. Each entry includes a short summary and a link to the full document.
 
 ---
 
