@@ -72,7 +72,7 @@ Write-ups, papers, and coursework. Each entry includes a short summary and a lin
 
 🔗 [Read the full write-up](/SCADA_Systems_and_ICS.pdf)
 
-**Summary:** This paper examines SCADA systems and their role in monitoring and coordinating critical infrastructure and industrial processes. It highlights how securing OT/ICS environments differs from traditional IT because cyber incidents can affect physical operations, public services, reliability, and safety.     SCADA_Systems_and_ICS
+**Summary:** This paper examines SCADA systems and their role in monitoring and coordinating critical infrastructure and industrial processes. It highlights how securing OT/ICS environments differs from traditional IT because cyber incidents can affect physical operations, public services, reliability, and safety
 
 **Key Takeaways:**
 - SCADA environments commonly include PLCs, RTUs, HMIs, and supervisory systems.
@@ -80,6 +80,8 @@ Write-ups, papers, and coursework. Each entry includes a short summary and a lin
 - Increased network connectivity can create additional attack paths.
 - Patching industrial systems can be difficult because changes may affect operations.
 - Network segmentation, strong access controls, monitoring, incident response, and recovery planning improve SCADA security.
+
+---
 
 ## 🐧 Linux Coursework
 <a id="linux"></a>
