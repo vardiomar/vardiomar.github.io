@@ -1,12 +1,9 @@
 ---
-layout: default
+layout: page
 title: Projects
 ---
 
-{% include nav.html %}
-
 <a id="top"></a>
-
 ## Quick Navigation
 
 - [SOC Analyst Home Lab](#soc-lab)
