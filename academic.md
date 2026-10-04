@@ -1,8 +1,8 @@
 
 ---
 layout: default
-title: Academic Work
----
+title: Omar Vardi
+--- 
 
 {% include nav.html %}
 
