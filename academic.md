@@ -17,6 +17,7 @@ Write-ups, papers, and coursework. Each entry includes a short summary and a lin
 
 ## Quick Navigation
 
+- [Linux Coursework](#linux)
 - [C.I.A Triad](/CIA_Triad_write-up.pdf)
 - [Human Factors in Cybersecurity](/Human_Factor_in_Cybersecurity.pdf)
 - [SCADA Systems and ICS](/SCADA_Systems_and_ICS.pdf)
