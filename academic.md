@@ -2,7 +2,7 @@
 ---
 layout: default
 title: Omar Vardi
---- 
+---
 
 {% include nav.html %}
 
