@@ -89,7 +89,9 @@ Write-ups, papers, and coursework. Each entry includes a short summary and a lin
 <a id="linux"></a>
 
 **Course:** CYSE_270 LINUX SYSTEM FOR CYBERSECURITY
+
 **Term:** Month Year – Fall 2026
+
 **Focus:** command line, file permissions, bash scripting, system administration, logging
 
 ### Write-ups
