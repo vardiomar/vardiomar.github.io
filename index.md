@@ -1,12 +1,12 @@
 ---
 layout: page
+title: "📨 Contact & Links"
 feature_image: "https://picsum.photos/2560/600?image=866"
 feature_text: |
   ## Omar Vardi
   Cybersecurity Specialist | GIAC Certified | U.S. Navy Veteran
 ---
 
-## 📨 Contact & Links
 <a id="contact"></a>
 
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:amayvardi@gmail.com)
