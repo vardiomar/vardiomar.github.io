@@ -17,22 +17,22 @@ Write-ups, papers, and coursework from my Bachelor's in Applied Cybersecurity at
 
 ## Quick Navigation
 
-- [Write-up 1 Title](#writeup-1)
-- [Write-up 2 Title](#writeup-2)
-- [Write-up 3 Title](#writeup-3)
+- [C.I.A Triad](/CIA_Triad_write-up.pdf)
+- [Human Factors in Cybersecurity](/Human_Factor_in_Cybersecurity.pdf)
+- [SCADA Systems and ICS](/SCADA_Systems_and_ICS.pdf)
 
 ---
 
 ## Write-ups
 
-### 📄 Write-up 1 Title
+### 📄 C.I.A Triad
 <a id="writeup-1"></a>
 
 **Course / Context:** CYSE/IT 200T - Cybersecurity, Technology & Society
 
 **Date:** Fall 2026
 
-🔗 [Read the full write-up](/YOUR_FILE.pdf)
+🔗 [Read the full write-up](/CIA_Triad_write-up.pdf)
 
 **Summary:** This paper examines the CIA triad. It explains how authentication and authorization help protect information and systems. It uses the 2015 Anthem data breach to show how phishing and weak access controls can expose sensitive information.
 
@@ -46,14 +46,14 @@ Write-ups, papers, and coursework from my Bachelor's in Applied Cybersecurity at
 
 ---
 
-### 📄 Write-up 2 Title
+### 📄 Human Factors in Cybersecurity
 <a id="writeup-2"></a>
 
 **Course / Context:** CYSE/IT 200T - Cybersecurity, Technology & Society
 
 **Date:** Fall 2026
 
-🔗 [Read the full write-up](/YOUR_FILE.pdf)
+🔗 [Read the full write-up](/Human_Factor_in_Cybersecurity.pdf)
 
 **Summary:** This paper explores how human behavior can create cybersecurity risks even when strong technical defenses are in place. It focuses on threats such as phishing, social engineering, weak passwords, and poor security practices, while emphasizing the importance of security awareness and organizational culture.
 
@@ -66,14 +66,14 @@ Write-ups, papers, and coursework from my Bachelor's in Applied Cybersecurity at
 
 ---
 
-### 📄 Write-up 3 Title
+### 📄 SCADA Systems and ICS
 <a id="writeup-3"></a>
 
 **Course / Context:** CYSE/IT 200T - Cybersecurity, Technology & Society
 
 **Date:** Fall 2026
 
-🔗 [Read the full write-up](/YOUR_FILE.pdf)
+🔗 [Read the full write-up](/SCADA_Systems_and_ICS.pdf)
 
 **Summary:** This paper examines SCADA systems and their role in monitoring and coordinating critical infrastructure and industrial processes. It highlights how securing OT/ICS environments differs from traditional IT because cyber incidents can affect physical operations, public services, reliability, and safety.     SCADA_Systems_and_ICS
 
