@@ -84,6 +84,31 @@ Write-ups, papers, and coursework. Each entry includes a short summary and a lin
 - Patching industrial systems can be difficult because changes may affect operations.
 - Network segmentation, strong access controls, monitoring, incident response, and recovery planning improve SCADA security.
 
+## 🐧 Linux Coursework
+<a id="linux"></a>
+
+**Course:** CYSE_270 LINUX SYSTEM FOR CYBERSECURITY
+**Term:** Month Year – Fall 2026
+**Focus:** command line, file permissions, bash scripting, system administration, logging
+
+### Write-ups
+
+- 📄 [Write-up title](/docs/linux/Linux_Writeup_1.pdf) – PENDING....
+- 📄 [Write-up title](/docs/linux/Linux_Writeup_2.pdf) – PENDING....
+
+### Homework
+
+| Assignment | Topic | Link |
+|------------|-------|------|
+| Homework 1 | Installing Kali Linux on Virtual Box | [PDF](/Kali_Linux_VM_Install.pdf) |
+| Homework 2 | Basic Command Line | [PDF](/Working_with_the_commandLine.pdf) |
+| Homework 3 | Intermmediate Command Line | [PDF](/Working_with_the_commandLine_Part2.pdf) |
+| Homework 4 | Working with VI editor | [PDF](/Working_with_VI_editor.pdf) |
+
+**Skills demonstrated:** Bash, permissions and ACLs, cron, SSH, log analysis
+
+---
+
 
 ---
 
