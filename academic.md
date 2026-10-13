@@ -5,6 +5,7 @@ feature_image: "https://picsum.photos/2560/600?image=866"
 feature_text: |
   ## Omar Vardi
   Cybersecurity Specialist | GIAC Certified | U.S. Navy Veteran
+  
 ---
  
 <a id="top"></a>
@@ -44,6 +45,7 @@ Write-ups, papers, and coursework. Each entry includes a short summary and a lin
 - Availability ensures authorized users can access systems when needed.
 - Authentication verifies who a user is, while authorization determines what they can access.
 - MFA, access controls, employee training, and monitoring help reduce security risks.
+
 ---
  
 ### 📄 Human Factors in Cybersecurity
@@ -63,6 +65,7 @@ Write-ups, papers, and coursework. Each entry includes a short summary and a lin
 - Weak and reused passwords can increase the impact of credential compromise.
 - Security policies should encourage employees to report mistakes and suspicious activity.
 - MFA, least privilege, access controls, training, and monitoring can reduce human-related risks.
+  
 ---
  
 ### 📄 SCADA Systems and ICS
@@ -81,7 +84,8 @@ Write-ups, papers, and coursework. Each entry includes a short summary and a lin
 - OT security must account for safety, reliability, and operational requirements.
 - Increased network connectivity can create additional attack paths.
 - Patching industrial systems can be difficult because changes may affect operations.
-- Network segmentation, strong access controls, monitoring, incident response, and recovery planning improve SCADA security.
+- Network segmentation, strong access controls, monitoring, incident response, and recovery planning improve SCADA security
+  
 ---
  
 ## 🧠 Cybersecurity and Social Science
