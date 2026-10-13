@@ -22,7 +22,7 @@ Write-ups, papers, and coursework. Each entry includes a short summary and a lin
 - [Human Factors in Cybersecurity](/Human_Factor_in_Cybersecurity.pdf)
 - [SCADA Systems and ICS](/SCADA_Systems_and_ICS.pdf)
 - [Cybersecurity and Social Science](#cyse-social-science)
-  - [PowerPoint Presentation](#presentation)
+  
 ---
  
 ## Write-ups
@@ -139,9 +139,11 @@ As a cybersecurity student, I believe protecting people is just as important as 
 **Key Takeaways:**
 - Social engineering targets people. Attackers manipulate human behavior instead of relying only on technical weaknesses.
 - Psychology plays a major role. Attackers exploit trust, fear, urgency, authority, curiosity, and greed.
-- [There are different attack methods. Phishing, impersonation, pretexting, and phone or text scams are common social engineering tactics.
+- There are different attack methods. Common social engineering tactics include phishing, impersonation, pretexting, and phone or text scams.
 - Awareness helps prevent attacks. Verifying unusual requests, reporting suspicious activity, and slowing down before clicking links can reduce risks.
 - People and technology must work together. Security awareness training, multifactor authentication (MFA), email filtering, and security monitoring help protect individuals and organizations.
+
+  
 ---
  
 ## 🐧 Linux Coursework
