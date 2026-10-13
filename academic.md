@@ -126,7 +126,7 @@ As a cybersecurity student, I believe protecting people is just as important as 
 ### 📊 PowerPoint Presentation
 <a id="presentation"></a>
  
-#### 📄 [Human Engineering: Hacking The Mind]
+#### 📄 Human Engineering: Hacking The Mind
  
 **Course / Context:** CYSE/IT 200T - Cybersecurity, Technology & Society
  
