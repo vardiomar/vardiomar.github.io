@@ -1,177 +1,275 @@
+/* Reset
+------------------------*/
 
-Here is the hexdump of the Jekyll theme documentation: file:///home/monkeydluffy/Documents/Jekyll%20Hexdump/hexdump-jekyll-theme-v1.0/hexdump-jekyll-theme-v1.0/Documentation/index.html
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, nav, section {
+  display: block;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption, th, td {
+  font-weight: normal;
+  text-align: left;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+blockquote, q {
+  quotes: "" "";
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
+}
+a img {
+  border: 0;
+}
 
-this is my github.io : vardiomar.github.io
+/* Global
+------------------------*/
 
-now which document we should change first on my side, w have: 
+body {
+  background-color: #f6f9fc;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #28384d;
+  font-weight: normal;
+  margin: 28px 0 22px;
+}
+h1 {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 42px;
+  letter-spacing: -1px;
+}
+h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -1px;
+}
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -1px;
+}
+h4 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+h5 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+hr {
+  background: #f6f9fc;
+  border: 0;
+  height: 2px;
+  margin: 30px 0;
+}
+p {
+  margin-bottom: 22px;
+}
+code, kbd, pre, samp {
+  background: #f6f9fc;
+  font-family: monospace, serif;
+  font-size: 16px;
+  padding: 0 3px;
+}
+dl {
+  margin: 0 30px 28px;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin: 0 0 22px;
+}
+ul, ol {
+  margin-bottom: 22px;
+  padding-left: 30px;
+}
 
-header.html
-nav.html
-config.yml
-academic.md
-index.md
-projects.md
+ol ol {
+  list-style: decimal;
+}
+li > ul, li > ol {
+  margin-bottom: 0;
+}
+b, strong {
+  font-weight: bold;
+}
+dfn, em, cite, i {
+  font-style: italic;
+}
+a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+a:hover {
+  border-bottom: 1px solid #0076ca;
+  color: #0076ca;
+}
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  width: auto;
+  margin-bottom: 15px;
+}
 
-Checking access to a local file path provided.
-Checking access to a local file path provided.
-Start with config.yml. In Jekyll it drives everything else: site title, description, url and baseurl, theme settings, and often the author info and navigation links that the layouts read from. For a vardiomar.github.io user site, url should be https://vardiomar.github.io and baseurl should be empty (""). If those are wrong, CSS, links and images break no matter what you edit afterward. Restart jekyll serve after each config change, because _config.yml isn’t live-reloaded.
+pre {
+  overflow: auto;
+  padding: 32px;
+  margin-bottom: 22px;
+  font-size: 14px;
+  line-height: 22px;
+  white-space: pre-line;
+  word-wrap: break-word;
+  background-color: #f6f9fc;
+}
 
-After that, I’d go in this order:
+code {
+  padding: 4px 8px;
+}
 
-nav.html: set your menu entries so they point to your pages (Home, Academic, Projects). Doing this early lets you click between pages while you edit the rest.
-header.html: set your site name or logo, and any head or meta tags the theme exposes.
-index.md: your landing page, once the structure around it works.
-academic.md, then projects.md: these are mostly content, so they’re easiest to fill in last. Check that each has the front matter (the --- block with layout, title, and permalink if the theme uses it) that the theme expects.
-I can’t open that file:/// link, since it’s on your computer and not reachable from here. So I can’t say which exact config keys the Hexdump theme uses. If you paste the relevant parts of the documentation, or your current config.yml and nav.html, I can tell you exactly what to change in each.
+span.comment {
+  font-style: italic;
+  color: #998;
+}
 
-Pasted text.txt
-Pasted text.txt
-TXT
-here is for hexdump and the following is my config.yml title: Omar Vardi
-description: Cybersecurity Specialist | GIAC Certified | U.S. Navy Veteran
-url: https://vardiomar.github.io
-permalink: pretty
-remote_theme: daviddarnes/alembic@main
+/* Structure
+------------------------*/
 
-plugins:
-  - jekyll-remote-theme
-  - jekyll-sitemap
-  - jekyll-mentions
-  - jekyll-paginate
-  - jekyll-seo-tag
-  - jekyll-redirect-from
-  - jekyll-feed
-  - jekyll-include-cache
-  - jemoji
+body {
+  padding: 0 15px;
+}
+.wrap {
+  margin: 0 auto;
+  max-width: 980px;
+}
 
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: page
+/* Header
+------------------------*/
 
-navigation_header:
-  - title: Omar Vardi
-    url: /
-  - title: Projects
-    url: /projects/
-  - title: Academic Work
-    url: /academic/
-  - title: Contact
-    url: /#contact
+.site-header {
+  padding: 45px;
+}
+.site-title {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #272727;
+}
+.site-description {
+  font-size: 24px;
+  letter-spacing: -1px;
+  line-height: 30px;
+  margin-bottom: 0;
+  text-align: center;
+}
 
-social_links:
-  LinkedIn: https://linkedin.com/in/omarvardi
-  GitHub: https://github.com/vardiomar
+/* Main
+------------------------*/
 
-Diagnosing a mismatch between the theme and its stylesheet.
-Diagnosing a mismatch between the theme and its stylesheet.
-Your config.yml doesn’t use Hexdump. It has remote_theme: daviddarnes/alembic@main, so your site is currently built on the Alembic theme, and that Hexdump CSS isn’t being loaded at all. Keys like navigation_header and social_links are also Alembic-specific, so Hexdump won’t read them.
+#main {
+  background: #fff;
+  border: 1px solid #FAFAFB;
+}
 
-Before editing any of the six files, decide which theme you want.
+/* support */
 
-Option A: Stay on Alembic. Nothing needs to change in config.yml. Edit nav.html or header.html only if you want to override Alembic’s defaults, and fill in index.md, projects.md and academic.md.
+.support {
+  padding: 40px 30px;
+  text-align: center;
+  background: #f6f9fc;
+}
+.support p {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 17px;
+}
 
-Option B: Switch to Hexdump. That CSS looks like a plain static theme (.site-header, #main, #content, .site-info), so it probably ships as a folder of layouts, includes and assets rather than a gem. In that case:
+.support-btn {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 3px;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  outline: none;
+  color: #fff;
+  background: #28384d;
+}
 
-Copy the Hexdump files into your repo root: _layouts/, _includes/, assets/ (including the stylesheet), and so on.
-In config.yml, delete the remote_theme: line and jekyll-remote-theme from plugins. Remove navigation_header and social_links too, unless Hexdump’s templates read them (the docs will say).
-Keep title, description and url, because Hexdump’s header almost certainly prints site.title and site.description. Your description is already a good tagline for the header.
-Then edit header.html, nav.html, and the three .md files. Make sure their front matter uses a layout name that actually exists in Hexdump’s _layouts/ (your defaults currently set layout: page, which may not exist there).
-Since you’re going to the trouble of downloading Hexdump, I’d assume Option B, and the first edit is the theme swap in config.yml.
+.support-btn:hover {
+  color: #fff;
+  border-bottom-color: transparent;
+}
 
-To give you exact changes for header.html and nav.html, I need to see Hexdump’s _layouts/default.html (or whatever the main layout is) and its _includes/header.html. Paste those and I’ll tell you what to change.
+/* Content */
 
-yes switch to hexdump please
+#content {
+  margin: 0 auto;
+  padding: 28px 60px;
+}
+#content section {
+  margin-bottom: 56px;
+}
 
-Created a file, shared a file
-I’ve written a new _config.yml for the Hexdump switch. Jekyll only reads the file if it starts with an underscore, so replace your current config with this one.
+/* Footer
+------------------------*/
 
-Theme: I removed remote_theme: daviddarnes/alembic@main, along with the jekyll-remote-theme, jekyll-include-cache, jekyll-mentions, jekyll-paginate and jemoji plugins. Hexdump doesn’t need them.
-Kept: title, description, url, and the sitemap, SEO, feed and redirect plugins.
-Added: baseurl: "", which is correct for a username.github.io site.
-Layout default: I set layout: default as a guess. Open Hexdump’s _layouts/ folder and use the name of its main layout, without .html.
-Navigation and social links: I kept them (with “Omar Vardi” renamed to “Home”). Hexdump won’t read them on its own, but nav.html can loop over them.
-Next steps:
+.site-info {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 28px 30px;
+  text-align: center;
+}
 
-Copy Hexdump’s _layouts/, _includes/ and assets/ folders into your repo root.
-Make sure each of index.md, projects.md and academic.md has front matter like this:
-   ---
-   layout: default
-   title: Projects
-   permalink: /projects/
-   ---
-Run bundle exec jekyll serve. Restart it after every config change.
-After that, paste Hexdump’s main layout file and its _includes/header.html. Then I can write your header.html and nav.html to match.
+*::selection {
+    color: #fff;
+    background-color: #0076ca;
+}
 
+/* Media Queries
+------------------------*/
 
-config
-YML 
-whats nex to change index.md? or nav
-
-Do nav.html next. Once the menu works, you can click between pages while you fill in index.md, and you’ll find out right away if a page’s layout or permalink is wrong.
-
-Here’s a nav.html that reads the navigation_header list from your config, so you only edit links in one place:
-
-html
-<nav class="site-nav">
-  <ul>
-    {% for item in site.navigation_header %}
-      <li>
-        <a href="{{ item.url | relative_url }}"
-           {% if page.url == item.url %}aria-current="page"{% endif %}>
-          {{ item.title }}
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</nav>
-Two things to know:
-
-Where it goes:
-
-
-
-
-
-
-config · YML
-title: Omar Vardi
-description: Cybersecurity Specialist | GIAC Certified | U.S. Navy Veteran
-url: https://vardiomar.github.io
-baseurl: ""
-permalink: pretty
- 
-# Hexdump is installed as local files (_layouts, _includes, assets),
-# so there is no remote_theme line anymore.
- 
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll-redirect-from
- 
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      # Must match a file in Hexdump's _layouts/ folder (without .html).
-      # Change "default" if Hexdump names its main layout differently.
-      layout: default
- 
-# Not Hexdump keys: kept so you can loop over them in nav.html if you like.
-navigation_header:
-  - title: Home
-    url: /
-  - title: Projects
-    url: /projects/
-  - title: Academic Work
-    url: /academic/
- 
-social_links:
-  LinkedIn: https://linkedin.com/in/omarvardi
-  GitHub: https://github.com/vardiomar
- 
-Claude is responding
+@media only screen and (max-width: 767px) {
+  #content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
