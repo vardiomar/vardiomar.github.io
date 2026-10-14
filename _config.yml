@@ -1,4 +1,33 @@
-title: Omar Vardi
+
+Here is the hexdump of the Jekyll theme documentation: file:///home/monkeydluffy/Documents/Jekyll%20Hexdump/hexdump-jekyll-theme-v1.0/hexdump-jekyll-theme-v1.0/Documentation/index.html
+
+this is my github.io : vardiomar.github.io
+
+now which document we should change first on my side, w have: 
+
+header.html
+nav.html
+config.yml
+academic.md
+index.md
+projects.md
+
+Checking access to a local file path provided.
+Checking access to a local file path provided.
+Start with config.yml. In Jekyll it drives everything else: site title, description, url and baseurl, theme settings, and often the author info and navigation links that the layouts read from. For a vardiomar.github.io user site, url should be https://vardiomar.github.io and baseurl should be empty (""). If those are wrong, CSS, links and images break no matter what you edit afterward. Restart jekyll serve after each config change, because _config.yml isn’t live-reloaded.
+
+After that, I’d go in this order:
+
+nav.html: set your menu entries so they point to your pages (Home, Academic, Projects). Doing this early lets you click between pages while you edit the rest.
+header.html: set your site name or logo, and any head or meta tags the theme exposes.
+index.md: your landing page, once the structure around it works.
+academic.md, then projects.md: these are mostly content, so they’re easiest to fill in last. Check that each has the front matter (the --- block with layout, title, and permalink if the theme uses it) that the theme expects.
+I can’t open that file:/// link, since it’s on your computer and not reachable from here. So I can’t say which exact config keys the Hexdump theme uses. If you paste the relevant parts of the documentation, or your current config.yml and nav.html, I can tell you exactly what to change in each.
+
+Pasted text.txt
+Pasted text.txt
+TXT
+here is for hexdump and the following is my config.yml title: Omar Vardi
 description: Cybersecurity Specialist | GIAC Certified | U.S. Navy Veteran
 url: https://vardiomar.github.io
 permalink: pretty
@@ -33,3 +62,114 @@ navigation_header:
 social_links:
   LinkedIn: https://linkedin.com/in/omarvardi
   GitHub: https://github.com/vardiomar
+
+Diagnosing a mismatch between the theme and its stylesheet.
+Diagnosing a mismatch between the theme and its stylesheet.
+Your config.yml doesn’t use Hexdump. It has remote_theme: daviddarnes/alembic@main, so your site is currently built on the Alembic theme, and that Hexdump CSS isn’t being loaded at all. Keys like navigation_header and social_links are also Alembic-specific, so Hexdump won’t read them.
+
+Before editing any of the six files, decide which theme you want.
+
+Option A: Stay on Alembic. Nothing needs to change in config.yml. Edit nav.html or header.html only if you want to override Alembic’s defaults, and fill in index.md, projects.md and academic.md.
+
+Option B: Switch to Hexdump. That CSS looks like a plain static theme (.site-header, #main, #content, .site-info), so it probably ships as a folder of layouts, includes and assets rather than a gem. In that case:
+
+Copy the Hexdump files into your repo root: _layouts/, _includes/, assets/ (including the stylesheet), and so on.
+In config.yml, delete the remote_theme: line and jekyll-remote-theme from plugins. Remove navigation_header and social_links too, unless Hexdump’s templates read them (the docs will say).
+Keep title, description and url, because Hexdump’s header almost certainly prints site.title and site.description. Your description is already a good tagline for the header.
+Then edit header.html, nav.html, and the three .md files. Make sure their front matter uses a layout name that actually exists in Hexdump’s _layouts/ (your defaults currently set layout: page, which may not exist there).
+Since you’re going to the trouble of downloading Hexdump, I’d assume Option B, and the first edit is the theme swap in config.yml.
+
+To give you exact changes for header.html and nav.html, I need to see Hexdump’s _layouts/default.html (or whatever the main layout is) and its _includes/header.html. Paste those and I’ll tell you what to change.
+
+yes switch to hexdump please
+
+Created a file, shared a file
+I’ve written a new _config.yml for the Hexdump switch. Jekyll only reads the file if it starts with an underscore, so replace your current config with this one.
+
+Theme: I removed remote_theme: daviddarnes/alembic@main, along with the jekyll-remote-theme, jekyll-include-cache, jekyll-mentions, jekyll-paginate and jemoji plugins. Hexdump doesn’t need them.
+Kept: title, description, url, and the sitemap, SEO, feed and redirect plugins.
+Added: baseurl: "", which is correct for a username.github.io site.
+Layout default: I set layout: default as a guess. Open Hexdump’s _layouts/ folder and use the name of its main layout, without .html.
+Navigation and social links: I kept them (with “Omar Vardi” renamed to “Home”). Hexdump won’t read them on its own, but nav.html can loop over them.
+Next steps:
+
+Copy Hexdump’s _layouts/, _includes/ and assets/ folders into your repo root.
+Make sure each of index.md, projects.md and academic.md has front matter like this:
+   ---
+   layout: default
+   title: Projects
+   permalink: /projects/
+   ---
+Run bundle exec jekyll serve. Restart it after every config change.
+After that, paste Hexdump’s main layout file and its _includes/header.html. Then I can write your header.html and nav.html to match.
+
+
+config
+YML 
+whats nex to change index.md? or nav
+
+Do nav.html next. Once the menu works, you can click between pages while you fill in index.md, and you’ll find out right away if a page’s layout or permalink is wrong.
+
+Here’s a nav.html that reads the navigation_header list from your config, so you only edit links in one place:
+
+html
+<nav class="site-nav">
+  <ul>
+    {% for item in site.navigation_header %}
+      <li>
+        <a href="{{ item.url | relative_url }}"
+           {% if page.url == item.url %}aria-current="page"{% endif %}>
+          {{ item.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
+Two things to know:
+
+Where it goes:
+
+
+
+
+
+
+config · YML
+title: Omar Vardi
+description: Cybersecurity Specialist | GIAC Certified | U.S. Navy Veteran
+url: https://vardiomar.github.io
+baseurl: ""
+permalink: pretty
+ 
+# Hexdump is installed as local files (_layouts, _includes, assets),
+# so there is no remote_theme line anymore.
+ 
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-redirect-from
+ 
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      # Must match a file in Hexdump's _layouts/ folder (without .html).
+      # Change "default" if Hexdump names its main layout differently.
+      layout: default
+ 
+# Not Hexdump keys: kept so you can loop over them in nav.html if you like.
+navigation_header:
+  - title: Home
+    url: /
+  - title: Projects
+    url: /projects/
+  - title: Academic Work
+    url: /academic/
+ 
+social_links:
+  LinkedIn: https://linkedin.com/in/omarvardi
+  GitHub: https://github.com/vardiomar
+ 
+Claude is responding
