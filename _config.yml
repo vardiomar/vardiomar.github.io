@@ -58,6 +58,8 @@ navigation_header:
     url: /projects/
   - title: Academic Work
     url: /academic/
+  - title: Contact
+    url: /#contact
 
 social_links:
   LinkedIn: https://linkedin.com/in/omarvardi
