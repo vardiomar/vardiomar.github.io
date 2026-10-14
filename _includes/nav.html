@@ -1,6 +1,12 @@
-<nav style="text-align:center; margin: 20px 0; font-weight:600;">
-  <a href="/" style="margin: 0 20px;">Home</a>
-  <a href="/projects" style="margin: 0 20px;">Projects</a>
-  <a href="/academic" style="margin: 0 20px;">Academic Work</a>
+<nav class="site-nav">
+  <ul>
+    {% for item in site.navigation_header %}
+      <li>
+        <a href="{{ item.url | relative_url }}"
+           {% if page.url == item.url %}aria-current="page"{% endif %}>
+          {{ item.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
 </nav>
-<hr>
