@@ -1,8 +1,161 @@
-<header class="site-header" style="padding: 15px 0; text-align:center;">
-  <nav style="margin-bottom:10px;">
-    <a href="/" style="margin: 0 15px; font-weight:600;">Home</a>
-    <a href="/projects/" style="margin: 0 15px; font-weight:600;">Projects</a>
-    <a href="/academic/" style="margin: 0 15px; font-weight:600;">Academic Work</a>
-    <a href="/#contact" style="margin: 0 15px; font-weight:600;">Contact</a>
-  </nav>
+<!-- begin header -->
+<header class="header">
+  <div class="container-wide">
+    <div class="header__inner">
+
+      <div class="logo">
+        <a class="logo__name" href="{{ site.baseurl }}/">
+        {% if site.data.settings.logo %}
+        <img class="logo__image" src="{{ site.baseurl }}{{ site.data.settings.logo }}" alt="{{ site.data.settings.title }}">
+        {% else %}
+          {{ site.data.settings.title }}
+        {% endif %}
+        </a>
+      </div>
+
+      <nav class="main-nav" aria-label="Main menu">
+        <ul class="main-nav__list list-reset">
+          {% for item in site.data.settings.navigation %}
+            {% assign is_active = false %}
+            {% if page.url == item.url %}
+              {% assign is_active = true %}
+            {% endif %}
+
+            {% if item.submenu %}
+            <li class="main-nav__item dropdown">
+              <div class="main-nav__link dropdown-toggle" aria-expanded="false" tabindex="0">
+                <span class="main-nav__checkbox">[ ▼ ]</span>
+                <span class="main-nav__label">{{ item.label }}</span>
+              </div>
+
+              <div class="dropdown-menu">
+                {% for submenu_item in item.submenu %}
+                  {% assign sub_active = false %}
+                  {% if page.url == submenu_item.url %}
+                    {% assign sub_active = true %}
+                  {% endif %}
+
+                  <a href="{{ submenu_item.url | relative_url }}" class="main-nav__link{% if sub_active %} main-nav__link--active{% endif %}">
+                    <span class="main-nav__checkbox">{% if sub_active %}[ x ]{% else %}[&nbsp;]{% endif %}</span>
+                    <span class="main-nav__label">{{ submenu_item.label }}</span>
+                  </a>
+                {% endfor %}
+              </div>
+
+            </li>
+            {% else %}
+            <li class="main-nav__item{% if is_active %} main-nav__item--active{% endif %}">
+              <a class="main-nav__link" href="{{ item.url | relative_url }}">
+                <span class="main-nav__checkbox">{% if is_active %}[ x ]{% else %}[&nbsp;]{% endif %}</span>
+                <span class="main-nav__label">{{ item.label }}</span>
+              </a>
+            </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </nav>
+
+      {% unless site.data.settings.theme.theme_switcher == false %}
+      <div class="header__themes" role="group" aria-label="Choose color theme">
+        {% for theme in site.data.settings.themes %}
+        <button
+          class="theme-dot{% if theme.name == site.data.settings.theme.default %} theme-dot--active{% endif %}"
+          data-theme="{{ theme.name }}"
+          aria-label="Theme: {{ theme.name }}"
+          aria-pressed="{% if theme.name == site.data.settings.theme.default %}true{% else %}false{% endif %}"
+          title="{{ theme.name }}"
+          style="--dot-color: {{ theme.accent }}"
+        ></button>
+        {% endfor %}
+      </div>
+      {% else %}
+      <div class="header__themes header__themes--locked">
+        {% for theme in site.data.settings.themes %}
+        {% if theme.name == site.data.settings.theme.default %}
+        <span
+          class="theme-dot theme-dot--active theme-dot--locked"
+          title="{{ theme.name }}"
+          style="--dot-color: {{ theme.accent }}"
+        ></span>
+        {% endif %}
+        {% endfor %}
+      </div>
+      {% endunless %}
+
+      <div class="hamburger">
+        <div></div>
+      </div>
+
+    </div>
+  </div>
 </header>
+
+<div class="nav-overlay" id="navOverlay">
+  <div class="nav-overlay__inner">
+    <button class="button button--secondary nav-close">close <span class="nav-close__hotkey">[ESC]</span></button>
+
+    <nav class="mobile-nav" aria-label="Mobile menu">
+      <div class="nav-section-title">Navigation</div>
+
+      <ul class="mobile-nav__list list-reset">
+        {% assign current_index = 1 %}
+
+        {% for item in site.data.settings.navigation %}
+          {% assign is_active = false %}
+          {% if item.url == '/' and page.url == '/' %}
+            {% assign is_active = true %}
+          {% elsif item.url != '/' and page.url contains item.url %}
+            {% assign is_active = true %}
+          {% endif %}
+
+          {% if item.submenu %}
+            {% for submenu_item in item.submenu %}
+              {% assign sub_active = false %}
+              {% if page.url == submenu_item.url %}
+                {% assign sub_active = true %}
+              {% endif %}
+
+              <li class="mobile-nav__item{% if sub_active %} mobile-nav__item--active{% endif %}">
+                <a href="{{ submenu_item.url | relative_url }}" class="mobile-nav__link">
+                  <span class="mobile-nav__number">0{{ current_index }}.</span>
+                  <span class="mobile-nav__checkbox">{% if sub_active %}[ x ]{% else %}[&nbsp;]{% endif %}</span>
+                  <span class="mobile-nav__label">{{ submenu_item.label }}</span>
+                </a>
+              </li>
+              {% assign current_index = current_index | plus: 1 %}
+            {% endfor %}
+
+          {% else %}
+            <li class="mobile-nav__item{% if is_active %} mobile-nav__item--active{% endif %}">
+              <a class="mobile-nav__link" href="{{ item.url | relative_url }}">
+                <span class="mobile-nav__number">0{{ current_index }}.</span>
+                <span class="mobile-nav__checkbox">{% if is_active %}[ x ]{% else %}[&nbsp;]{% endif %}</span>
+                <span class="mobile-nav__label">{{ item.label }}</span>
+              </a>
+            </li>
+            {% assign current_index = current_index | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <div class="nav-connect">
+      <div class="nav-section-title">Connect</div>
+      {% if site.data.settings.social_footer %}
+      <div class="social">
+        <ul class="social__list list-reset">
+          {% for social in site.data.settings.social_footer %}
+          <li class="social__item">
+            <a class="social__link" href="{{ social.link }}" target="_blank" rel="noopener"
+              aria-label="Social link"><i class="{{ social.icon }}"></i></a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </div>
+
+    <div class="nav-meta">{{ site.data.settings.title }} · {{ site.time | date: '%Y' }}</div>
+  </div>
+</div>
+<!-- end header -->

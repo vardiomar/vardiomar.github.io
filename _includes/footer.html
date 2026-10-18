@@ -1,0 +1,94 @@
+<!-- begin footer -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="container">
+      <div class="grid grid-gap-7">
+
+        <div class="footer__widget col-6 col-d-12">
+          <div class="footer__info">
+            <div class="footer__logo">
+              <a class="footer__logo__name" href="{{ site.baseurl }}/">
+                {% if site.data.settings.logo %}
+                <img class="footer__logo__image" src="{{ site.baseurl }}{{ site.data.settings.logo }}"
+                  alt="{{ site.data.settings.title }}">
+                {% else %}
+                {{ site.data.settings.title }}
+                {% endif %}
+              </a>
+            </div>
+            {% if site.data.settings.footer_description %}
+            <p class="footer__info__description">{{ site.data.settings.footer_description }}</p>
+            {% endif %}
+
+            {% if site.data.settings.social_footer %}
+            <div class="social">
+              <ul class="social__list list-reset">
+                {% for social in site.data.settings.social_footer %}
+                <li class="social__item">
+                  <a class="social__link" href="{{ social.link }}" target="_blank" rel="noopener"
+                    aria-label="Social link"><i class="{{ social.icon }}"></i></a>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+
+        {% if site.data.settings.navigation %}
+        <div class="footer__widget col-2 col-d-4 col-t-12">
+          <div class="footer-nav__left">
+            <h3 class="footer__title">Navigation</h3>
+            <div class="footer-nav__list">
+            {% for item in site.data.settings.navigation %}
+            {% if item.submenu %}
+            {% else %}
+              <a class="footer-nav__link" href="{{ item.url | relative_url }}">{{ item.label }}</a>
+            {% endif %}
+            {% endfor %}
+            </div>
+          </div>
+        </div>
+        {% endif %}
+
+        {% assign has_submenu = false %}
+        {% for item in site.data.settings.navigation %}
+          {% if item.submenu and item.submenu != empty %}
+            {% assign has_submenu = true %}
+          {% endif %}
+        {% endfor %}
+
+        {% if has_submenu %}
+        <div class="footer__widget col-2 col-d-4 col-t-12">
+          <div class="footer-nav__right">
+            {% for item in site.data.settings.navigation %}
+            {% if item.submenu %}
+            <h3 class="footer__title">{{ item.label }}</h3>
+            <div class="footer-nav__list">
+              {% for submenu-item in item.submenu %}
+                <a class="footer-nav__link" href="{{ submenu-item.url | relative_url }}">{{submenu-item.label}}</a>
+              {% endfor %}
+            </div>
+            {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="copyright">
+    <div class="container">
+      <div class="copyright__inner">
+        <div class="copyright__content">
+          {{ site.time | date: '%Y' }} &copy; <a href="/">{{ site.data.settings.title }}</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.
+        </div>
+        <div class="top" title="Top"><i class="fa-solid fa-arrow-up"></i></div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- end footer -->

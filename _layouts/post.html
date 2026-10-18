@@ -1,0 +1,113 @@
+---
+layout: default
+---
+
+<!-- begin post -->
+<section class="section post-page">
+  <div class="container">
+
+    <div class="grid grid-gap-7">
+      <div class="col-8 col-d-12">
+
+        {% include page-breadcrumb.html current=page.title parent_label="Posts" parent_url="/posts/" %}
+
+        <div class="post-head">
+          <div class="post-head__top">
+            {% if page.tags.size >= 1 %}
+            <div class="post-tags">
+              {% for tag in page.tags %}
+              <a href="{{ site.baseurl }}/tags/?tag={{ tag | downcase | url_encode }}" class="post-tag">{{ tag }}</a>
+              {% endfor %}
+            </div>
+            {% endif %}
+
+            <div class="post-head__meta">
+              <time datetime="{{ page.date | date_to_xmlschema }}">{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}{{ page.date | date: date_format }}</time>
+              <span class="post-head__meta-sep">&middot;</span>
+              <span class="post-head__meta-read">
+                {% assign words = page.content | number_of_words %}
+                {% if words < 360 %} 1 min read {% else %} {{ words | divided_by: 180 }} min read {% endif %}
+              </span>
+            </div>
+          </div>
+
+          <h1 class="post-title">{{ page.title | escape }}</h1>
+
+          {% if page.description %}
+          <p class="post-description">{{ page.description }}</p>
+          {% endif %}
+        </div>
+
+      </div>
+    </div>
+
+    <div class="grid grid-gap-7">
+
+      <div class="post-page__main col-8 col-d-12">
+
+        {% if page.video_embed %}
+        <div class="post-video">
+          <div class="post-video__wrap">
+            <iframe src="{{ page.video_embed }}" loading="lazy" width="640" height="360" frameborder="0"
+              webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+        </div>
+        {% elsif page.image %}
+        <div class="post-image">
+          <img class="lazy" data-src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+        </div>
+        {% endif %}
+
+        {% if page.image_caption %}
+        <div class="image-caption">{{ page.image_caption | markdownify | replace: '<p>' | replace: '</p>' }}</div>
+        {% endif %}
+
+        <article class="post">
+          <div class="post__content">
+            {{ content }}
+          </div>
+        </article>
+
+        {% include share-buttons.html %}
+
+        {% if page.previous.url %}
+        <div class="post-nav">
+          <a href="{{ page.previous.url | relative_url }}" class="post-nav__link">
+            <div class="post-nav__box">
+              <span class="post-nav__label">Next Post <i class="fa-solid fa-arrow-right"></i></span>
+              <h2 class="post-nav__title">{{ page.previous.title }}</h2>
+            </div>
+            {% if page.previous.image %}
+            <span class="post-nav__image">
+              <img class="lazy" data-src="{{ page.previous.image | relative_url }}" alt="{{ page.previous.title }}">
+            </span>
+            {% endif %}
+          </a>
+        </div>
+        {% endif %}
+
+        {% if site.data.settings.disqus.enable == true and site.data.settings.disqus.disqus_identifier %}
+        {% include disqus-comments.html %}
+        {% endif %}
+
+      </div>
+
+      <div class="post-page__sidebar col-4 col-d-12">
+        <aside class="sidebar">
+          {% if page.toc == true %}
+          {% include sidebar-widgets/widget-toc.html content=content %}
+          {% endif %}
+          {% include sidebar-widgets/widget-related-posts.html %}
+          {% include sidebar-widgets/widget-tags.html %}
+          {% include sidebar-widgets/widget-author.html %}
+          {% include sidebar-widgets/widget-subscribe.html %}
+          {% include sidebar-widgets/widget-stats.html %}
+        </aside>
+      </div>
+
+    </div>
+
+    {% include related-posts.html %}
+  </div>
+</section>
+<!-- end post -->

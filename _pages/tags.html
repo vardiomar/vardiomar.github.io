@@ -1,0 +1,87 @@
+---
+layout: default
+title: Tags
+permalink: /tags/
+---
+
+{% assign sorted_tags = site.tags | sort %}
+
+<!-- begin tags-page -->
+<section class="section tags-page">
+  <div class="container">
+    <div class="grid grid-gap-7">
+      <div class="col-8 col-d-12">
+
+        <div class="tags-page__index-head" id="tagsIndexHead">
+          {% include page-breadcrumb.html %}
+
+          <div class="tags-page__head">
+            <h1 class="tags-page__title">All <span>tags.</span></h1>
+            <p class="tags-page__description">Browse posts by topic.</p>
+          </div>
+        </div>
+
+        {% for tag in sorted_tags %}
+        {% assign tag_name = tag[0] %}
+        {% assign tag_posts = tag[1] | sort: 'date' | reverse %}
+
+        <div class="tags-page__group-head is-hidden" data-tag-head="{{ tag_name | downcase }}">
+
+          {% include page-breadcrumb.html current=tag_name parent_label="Tags" parent_url="/tags/" %}
+
+          <div class="tags-page__head">
+            <h1 class="tags-page__title">Tag: <span>{{ tag_name | downcase }}.</span></h1>
+            <p class="tags-page__description">All posts tagged with <span>{{ tag_name }}</span>.</p>
+          </div>
+
+          <div class="tags-page__controls">
+            <span class="filter-tab is-active tags-page__count-badge">{% if tag_posts.size == 1 %}Post{% else %}Posts{% endif %} ({{ tag_posts.size }})</span>
+            <button type="button" class="filter-tab tags-page__sort" data-order="newest">Sort by: Newest</button>
+          </div>
+
+        </div>
+        {% endfor %}
+
+      </div>
+    </div>
+
+    <div class="grid grid-gap-7">
+
+      <div class="tags-page__main col-8 col-d-12">
+
+        <div class="tags-page__index" id="tagsIndex">
+          <div class="tags-page__index-list">
+            {% for tag in sorted_tags %}
+            <a href="{{ '/tags/' | relative_url }}?tag={{ tag[0] | downcase | url_encode }}" class="tags-page__index-item">
+              <span class="tags-page__index-name">{{ tag[0] | downcase }}</span>
+              <span class="tags-page__index-count">{{ tag[1].size }}</span>
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+
+        {% for tag in sorted_tags %}
+        {% assign tag_name = tag[0] %}
+        {% assign tag_posts = tag[1] | sort: 'date' | reverse %}
+
+        <div class="tags-page__group is-hidden" id="{{ tag_name | downcase }}">
+          <div class="post-list tags-page__list">
+            {% for post in tag_posts %}
+            {% include post-list-item.html %}
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+
+      </div>
+
+      <div class="tags-page__sidebar col-4 col-d-12">
+        <aside class="sidebar">
+          {% include sidebar-widgets/widget-featured-posts.html %}
+        </aside>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- end tags-page -->

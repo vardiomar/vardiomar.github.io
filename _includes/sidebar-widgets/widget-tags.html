@@ -1,0 +1,14 @@
+{% if site.tags.size > 0 %}
+<div class="widget widget-tags">
+  <div class="widget__header">
+    <span class="widget__title">Explore Tags</span>
+  </div>
+  <div class="tag-cloud">
+  {% assign sorted_tags = site.tags | sort %}
+  {% for tag in sorted_tags %}
+  {% assign tag_count = tag[1] | size %}
+    <a href="{{ site.baseurl }}/tags/?tag={{ tag[0] | downcase | url_encode }}" class="tag-cloud__link">{{ tag[0] }} <span>{{ tag_count }}</span></a>
+  {% endfor %}
+  </div>
+</div>
+{% endif %}

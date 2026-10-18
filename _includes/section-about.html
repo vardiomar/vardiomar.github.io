@@ -1,0 +1,60 @@
+{% if site.data.settings.about.enable %}
+<!-- begin section-about -->
+<section class="section section-about">
+  <div class="container">
+    <div class="grid grid-gap-7">
+
+      <div class="section-about__left col col-6 col-d-12">
+        <div class="section-about__image">
+          <div class="about-slider">
+            {% for image in site.data.settings.about_images %}
+            <figure class="about-slider__item">
+              <img src="{{ image.image | relative_url }}" alt="{{ image.alt | default: image.title }}" loading="lazy">
+              {% if image.caption %}
+              <figcaption class="about-slider__caption">
+                {{ image.caption | markdownify }}
+              </figcaption>
+              {% endif %}
+            </figure>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <div class="section-about__right col col-6 col-d-12">
+        <div class="section__header">
+          <div class="section__info">
+            {% if site.data.settings.about.tagline %}
+            <span class="section__tagline">{{ site.data.settings.about.tagline }}</span>
+            {% endif %}
+            <h2 class="section__title">{{ site.data.settings.about.title }}</h2>
+          </div>
+        </div>
+
+        <div class="about__description">
+          {{ site.data.settings.about.description | markdownify }}
+        </div>
+
+        {% if site.data.settings.author.skills %}
+        <div class="skills-grid">
+          {% for skill in site.data.settings.author.skills %}
+          <div class="skill-cell">
+            <div class="skill-cell__header">
+              <span>{{ skill.name }}</span>
+              <span>{{ skill.percent }}%</span>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: {{ skill.percent }}%"></div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- end section-about -->
+{% endif %}

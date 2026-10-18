@@ -1,0 +1,66 @@
+/* Animate */
+.animate {
+  animation: animateElement cubic-bezier(.300,.450,.450,.950) .75s;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  transition: transform .15s;
+
+  @keyframes animateElement {
+    0% {
+      transform: translate(0px,50px);
+    }
+    100% {
+      transform: translate(0px,0px);
+    }
+  }
+}
+
+.glitch {
+  animation: glitch 6s infinite;
+}
+
+@keyframes glitch {
+  0%,
+  90%,
+  100% {
+    clip-path: none;
+    transform: none;
+  }
+
+  91% {
+    clip-path: inset(20% 0 60% 0);
+    transform: translateX(-3px);
+  }
+
+  93% {
+    clip-path: inset(60% 0 20% 0);
+    transform: translateX(3px);
+  }
+
+  95% {
+    clip-path: none;
+    transform: none;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

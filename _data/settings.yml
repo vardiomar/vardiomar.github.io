@@ -1,0 +1,186 @@
+#-------------------------------
+# Site Settings
+title: "Omar Vardi"
+description: "Cybersecurity Specialist | GIAC Certified | U.S. Navy Veteran"
+logo: # You can add own logo. For example '/images/logo.png'.
+
+
+#-------------------------------
+# Navigation Settings
+navigation:
+  - label: 'Home'
+    url: '/'
+  - label: 'Projects'
+    url: '/projects/'
+  - label: 'Academic Work'
+    url: '/academic/'
+  - label: 'About & Contact'
+    url: '/about/'
+  # Hexdump's own contact form page. Add this back after you set up Formspree and enable the contact section below:
+  # - label: 'Contact'
+  #   url: '/contact/'
+
+
+# ------------------------------------------------------------------------------
+#  Theme Settings
+theme:
+  default: "matrix" # default theme: matrix | dracula | nord | gruvbox | mono
+  theme_switcher: true # show the dot theme switcher in the header
+
+
+# ------------------------------------------------------------------------------
+#  THEMES — all available color palettes
+# ------------------------------------------------------------------------------
+themes:
+  - name: "matrix"
+    label: "MATRIX"
+    accent: "#39ff14"
+
+  - name: "dracula"
+    label: "DRACULA"
+    accent: "#bd93f9"
+
+  - name: "nord"
+    label: "NORD"
+    accent: "#88c0d0"
+
+  - name: "gruvbox"
+    label: "GRUVBOX"
+    accent: "#fabd2f"
+
+  - name: "mono"
+    label: "MONO"
+    accent: "#aaaaaa"
+
+
+# ------------------------------------------------------------------------------
+#  Author Settings
+author:
+  name: "Omar Vardi"
+  username: "omar" # username (shown in the terminal prompt)
+  hostname: "vardiomar" # hostname (shown in the terminal prompt)
+  role: Cybersecurity Specialist
+  email: "amayvardi@gmail.com" # contact email (same one your current site links to)
+  career_start: "2019-03-15" # TODO: replace with your real career start date (YYYY-MM-DD)
+  projects_completed: 3 # number of completed projects (must stay a number, the theme's script reads it)
+  status: "available" # available | busy | open_to_offers (shown by the status command)
+  avatar_image: # TODO: add your photo, for example "/images/omar.jpg"
+  bio: "Cybersecurity specialist, GIAC certified, and U.S. Navy veteran."
+
+  # Social links for the Author widget
+  social:
+    - {name: "github", icon: "fa-brands fa-github", link: "https://github.com/vardiomar"}
+    - {name: "linkedin", icon: "fa-brands fa-linkedin", link: "https://linkedin.com/in/omarvardi"}
+
+  # TODO: add your own skills, for example:
+  #   - name: Python
+  #     percent: 90
+  skills: []
+
+  # ASCII avatar for the `cat avatar.txt` command
+  avatar: |
+    +----------+
+    |  o    o  |
+    |   ____   |
+    |  (    )  |
+    +----++----+
+        ||
+    [omar@vardiomar]
+    >_ defend · learn · repeat
+
+
+# ------------------------------------------------------------------------------
+#  Hero Settings
+hero:
+  enable: true
+  command: "me -h"
+  title: "Omar <span>Vardi</span>" # You can wrap text in a <span></span> tag to make it stand out, adding an accent color and a glitch effect.
+  title_size: "32px, 8vw, 110px" # Responsive font size: [Min], [Preferred/Scaling], [Max]. Supports px, em, rem, vw, etc.
+  description: Cybersecurity specialist, GIAC certified, and U.S. Navy veteran.
+  image: # TODO: optional hero image, for example '/images/06.jpg'
+
+  terminal:
+    enable: true
+
+
+# ------------------------------------------------------------------------------
+#  Projects Settings
+projects_section:
+  enable: true
+  tagline: ls projects/
+  title: What I <br> <span>ship.</span>
+  show_more: true
+
+
+#-------------------------------
+# Testimonials Section Settings (off until you have real testimonials)
+testimonials_section:
+  enable: false
+  tagline: clients/
+  title: What people <br> <span>say.</span>
+
+testimonial_items: []
+
+
+# ------------------------------------------------------------------------------
+#  Posts Section Settings (off until you write posts)
+posts_section:
+  enable: false
+  title: Latest <br> <span>writes.</span>
+  limit: 4 # how many posts to show on the homepage
+
+
+# ------------------------------------------------------------------------------
+#  Posts Page Settings (/posts/)
+posts_page:
+  per_page: 6 # how many posts to show per page (Load More button)
+
+
+# ------------------------------------------------------------------------------
+#  Disqus — comments on the post page
+disqus:
+  enable: false
+  disqus_identifier: "" # replace with your own shortname from disqus.com
+  disqus_title: "Start the conversation"
+  disqus_button_text: "Load Comments"
+
+
+# ------------------------------------------------------------------------------
+#  About Section Settings (off until you write your own text)
+about:
+  enable: false
+  tagline: whoami
+  title: The person <br> <span>behind it.</span>
+
+  # Supports markdown: **bold**, _italic_, line breaks
+  # (The terminal on the home page also prints this when a visitor types `about`.)
+  description: |
+    Cybersecurity specialist, GIAC certified, and U.S. Navy veteran.
+
+    I earned multiple GIAC certifications at SANS Technology Institute and I am now a junior at Old Dominion University, with a passion for cybersecurity and a focus on DFIR.
+
+about_images: []
+
+
+# ------------------------------------------------------------------------------
+#  Subscribe — newsletter subscription (off; needs your own MailChimp form)
+subscribe:
+  enable: false
+
+
+#-------------------------------
+# Footer Settings
+footer_description: "Cybersecurity portfolio of Omar Vardi."
+
+# Social Links
+social_footer:
+- {icon: "fa-brands fa-github", link: "https://github.com/vardiomar"}
+- {icon: "fa-brands fa-linkedin", link: "https://linkedin.com/in/omarvardi"}
+
+
+# ------------------------------------------------------------------------------
+#  Contact — contact form (off until you have a Formspree form ID)
+#  Sign up at formspree.io and paste your form ID
+contact:
+  enable: false
+  form_id: "" # paste your Formspree form ID here (e.g. xpzgkrjb) when you set one up

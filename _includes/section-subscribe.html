@@ -1,0 +1,43 @@
+{% if site.data.settings.subscribe.enable %}
+<!-- begin section-subscribe -->
+<section class="section section-subscribe">
+
+  <div class="container">
+    <div class="grid grid-gap-7">
+
+      <div class="section-subscribe__left col col-6 col-d-12">
+        <div class="section__header">
+          <div class="section__info">
+            {% if site.data.settings.subscribe.tagline %}
+            <span class="section__tagline">{{ site.data.settings.subscribe.tagline }}</span>
+            {% endif %}
+            <h2 class="section__title">{{ site.data.settings.subscribe.title }}</h2>
+            {% if site.data.settings.subscribe.description %}
+             <p class="section__description">{{ site.data.settings.subscribe.description }}</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <div class="section-subscribe__right col col-6 col-d-12">
+        {% if site.data.settings.subscribe.note %}
+        <p class="section-subscribe__note"><span>→</span> {{ site.data.settings.subscribe.note }}</p>
+        {% endif %}
+        <form class="section-subscribe__form validate" id="subscribeBannerForm membedded-subscribe-form" action="{% if site.data.settings.subscribe.action_url %}//{{ site.data.settings.subscribe.action_url }}{% else %}#{% endif %}" method="POST" name="membedded-subscribe-form" target="_blank" novalidate>
+          <span class="section-subscribe__input-prefix">--email</span>
+          <label class="screen-reader-text" for="subscribeBannerInput mce-EMAIL">Your email address</label>
+          <input class="section-subscribe__input" id="subscribeBannerInput mce-EMAIL" type="text" name="EMAIL" placeholder="{{ site.data.settings.subscribe.placeholder | default: 'your@email.com' }}" autocomplete="email" required aria-required="true">
+          <button class="section-subscribe__btn button button--primary" id="subscribeBannerBtn membedded-subscribe" type="submit">{{ site.data.settings.subscribe.button_text }}</button>
+        </form>
+        {% if site.data.settings.subscribe.agreements %}
+        <p class="section-subscribe__agreements">{{ site.data.settings.subscribe.agreements }}</p>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+
+</section>
+<!-- end section-subscribe -->
+
+{% endif %}

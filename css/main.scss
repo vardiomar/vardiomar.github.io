@@ -1,0 +1,136 @@
+---
+---
+
+@use "sass:list";
+
+/*!------------------------------------------------------------------
+[MAIN STYLESHEET]
+-------------------------------------------------------------------*/
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+:: Template name: Hexdump
+::
+:: Template Author: Anvod Studio (Artem Sheludko)
+:: Version: 1.0
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>
+:: 1-Tools and Libs
+    1.1-Normalize
+    1.2-Reset
+    1.3-Shared
+    1.4-Syntax Highlighting
+    1.5-Grid
+    1.6-Tiny Slider
+    1.7-Animate
+:: 2-Base Styles
+    2.1-Base
+:: 3-Modules
+    3.1-Header
+    3.2-Hero
+    3.3-Projects
+    3.4-Section Testimonials
+    3.5-Section About
+    3.6-Section Subscribe
+    3.7-Footer
+    3.8-Gallery
+    3.9-Sidebar
+    3.10-Article
+    3.11-Contact
+    3.12-Sections
+    3.13-Buttons
+:: 4-Layouts
+    4.1-Page
+    4.2-Tags Page
+    4.3-Posts Page
+    4.4-Projects Page
+    4.5-Single Post Page
+    4.6-Single Project Page
+<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+
+{% include_relative _0-settings/variables.scss %}
+{% include_relative _0-settings/color-scheme.scss %}
+{% include_relative _0-settings/mixins.scss %}
+{% include_relative _0-settings/helpers.scss %}
+
+
+/* Font Awesome (v7.0.1) */
+{% include_relative _0-settings/brands.scss %}
+{% include_relative _0-settings/solid.scss %}
+{% include_relative _0-settings/regular.scss %}
+{% include_relative _0-settings/fontawesome.scss %}
+
+
+/* =======================
+:: 1-Tools and Libs
+======================= */
+/* >>>>>>>>>>>>>> :: 1.1-Normalize <<<<<<<<<<<<<<< */
+{% include_relative _1-tools/normalize.scss %}
+/* >>>>>>>>>>>>>> :: 1.2-Reset <<<<<<<<<<<<<<< */
+{% include_relative _1-tools/reset.scss %}
+/* >>>>>>>>>>>>>> :: 1.3-Shared <<<<<<<<<<<<<<< */
+{% include_relative _1-tools/shared.scss %}
+/* >>>>>>>>>>>>>> :: 1.4-Syntax Highlighting <<<<<<<<<<<<<<< */
+{% include_relative _1-tools/syntax-highlighting.scss %}
+/* >>>>>>>>>>>>>> :: 1.5-Grid <<<<<<<<<<<<<<< */
+{% include_relative _1-tools/grid.scss %}
+/* >>>>>>>>>>>>>> 1.6-Tiny Slider <<<<<<<<<<<<<<< */
+{% include_relative _1-tools/tiny-slider.scss %}
+/* >>>>>>>>>>>>>> :: 1.7-Animate <<<<<<<<<<<<<<< */
+{% include_relative _1-tools/animate.scss %}
+
+
+/* =======================
+:: 2-Base Styles
+======================= */
+/* >>>>>>>>>>>>>> :: 2.1-Base <<<<<<<<<<<<<<< */
+{% include_relative _2-base/base.scss %}
+
+
+/* =======================
+:: 3-Modules
+======================= */
+/* >>>>>>>>>>>>>> :: 3.1-Header <<<<<<<<<<<<<<< */
+{% include_relative _3-modules/header.scss %}
+/* >>>>>>>>>>>>>> :: 3.2-Hero <<<<<<<<<<<<<<< */
+{% include_relative _3-modules/hero.scss %}
+/* >>>>>>>>>>>>>> :: 3.3-Projects <<<<<<<<<<<<<<< */
+{% include_relative _3-modules/projects.scss %}
+/* >>>>>>>>>>>>>> :: 3.4-Section Testimonials <<<<<<<<<<<<<<< */
+{% include_relative _3-modules/section-testimonials.scss %}
+/* >>>>>>>>>>>>>> :: 3.5-Section About <<<<<<<<<<<<<<< */
+{% include_relative _3-modules/section-about.scss %}
+/* >>>>>>>>>>>>>> :: 3.6-Section Subscribe <<<<<<<<<<<<<<< */
+{% include_relative _3-modules/section-subscribe.scss %}
+/* >>>>>>>>>>>>>> :: 3.7-Footer <<<<<<<<<<<<<<< */
+{% include_relative _3-modules/footer.scss %}
+/* >>>>>>>>>>>>>> :: 3.8-Gallery <<<<<<<<<<<<<<< */
+{% include_relative _3-modules/gallery.scss %}
+/* >>>>>>>>>>>>>> :: 3.9-Sidebar <<<<<<<<<<<<<<< */
+{% include_relative _3-modules/sidebar.scss %}
+/* >>>>>>>>>>>>>> :: 3.10-Article <<<<<<<<<<<<<<< */
+{% include_relative _3-modules/article.scss %}
+/* >>>>>>>>>>>>>> :: 3.11-Contact <<<<<<<<<<<<<<< */
+{% include_relative _3-modules/contact.scss %}
+/* >>>>>>>>>>>>>> :: 3.12-Sections <<<<<<<<<<<<<<< */
+{% include_relative _3-modules/sections.scss %}
+/* >>>>>>>>>>>>>> :: 3.13-Buttons <<<<<<<<<<<<<<< */
+{% include_relative _3-modules/buttons.scss %}
+
+
+/* =======================
+:: 4-Layouts
+======================= */
+/* >>>>>>>>>>>>>> :: 4.1-Page <<<<<<<<<<<<<<< */
+{% include_relative _4-layouts/page.scss %}
+/* >>>>>>>>>>>>>> :: 4.2-Tags Page <<<<<<<<<<<<<<< */
+{% include_relative _4-layouts/tags-page.scss %}
+/* >>>>>>>>>>>>>> :: 4.3-Posts Page <<<<<<<<<<<<<<< */
+{% include_relative _4-layouts/posts.scss %}
+/* >>>>>>>>>>>>>> :: 4.4-Projects Page <<<<<<<<<<<<<<< */
+{% include_relative _4-layouts/projects-page.scss %}
+/* >>>>>>>>>>>>>> :: 4.5-Single Post Page <<<<<<<<<<<<<<< */
+{% include_relative _4-layouts/single-post.scss %}
+/* >>>>>>>>>>>>>> :: 4.6-Single Project Page <<<<<<<<<<<<<<< */
+{% include_relative _4-layouts/project-page.scss %}

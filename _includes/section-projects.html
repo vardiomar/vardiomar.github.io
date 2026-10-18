@@ -1,0 +1,33 @@
+{% if site.data.settings.projects_section.enable %}
+<!-- begin projects-section -->
+<div class="container">
+  <section class="section projects-section" id="projects">
+
+    <div class="section__header">
+      <div class="section__info">
+        {% if site.data.settings.projects_section.tagline %}
+        <span class="section__tagline">{{ site.data.settings.projects_section.tagline }}</span>
+        {% endif %}
+        <h2 class="section__title">{{ site.data.settings.projects_section.title }}</h2>
+      </div>
+      {% if site.data.settings.projects_section.show_more %}
+      <a class="section__more" href="{{ '/projects' | relative_url }}">&gt; more projects</a>
+      {% endif %}
+    </div>
+
+    <div class="grid projects-grid">
+      {% assign sorted = site.projects | sort: 'date' | reverse %}
+      {% for project in sorted limit:5 %}
+        {% if forloop.index <= 2 %}
+          {% assign card_class = "col-6 col-t-12" %}
+        {% else %}
+          {% assign card_class = "col-4 col-d-6 col-t-12" %}
+        {% endif %}
+        {% include project-card.html class=card_class %}
+      {% endfor %}
+    </div>
+
+  </section>
+</div>
+<!-- end projects-section -->
+{% endif %}

@@ -1,0 +1,56 @@
+<div class="widget widget-stats">
+  <div class="widget__header">
+    <span class="widget__title">Blog Stats</span>
+  </div>
+
+  {% assign total_posts = site.posts | size %}
+  {% assign total_tags = site.tags | size %}
+
+  {% assign total_words = 0 %}
+  {% for post in site.posts %}
+    {% assign words = post.content | strip_html | number_of_words %}
+    {% assign total_words = total_words | plus: words %}
+  {% endfor %}
+
+  {% if total_posts > 0 %}
+    {% assign avg_words_per_post = total_words | divided_by: total_posts %}
+    {% assign avg_read_time = avg_words_per_post | divided_by: 200 %}
+    {% if avg_read_time == 0 %}{% assign avg_read_time = 1 %}{% endif %}
+  {% else %}
+    {% assign avg_read_time = 0 %}
+  {% endif %}
+
+  {% if total_posts > 0 %}
+    {% assign oldest_post = site.posts | last %}
+    {% assign since_year = oldest_post.date | date: "%Y" %}
+  {% else %}
+    {% assign since_year = "2026" %}
+  {% endif %}
+
+  <div class="stats-list">
+    <div class="stats-item">
+      <span class="stats-label">Total posts:</span>
+      <span class="stats-value">{{ total_posts }}</span>
+    </div>
+
+    <div class="stats-item">
+      <span class="stats-label">Total words:</span>
+      <span class="stats-value">{{ total_words }}</span>
+    </div>
+
+    <div class="stats-item">
+      <span class="stats-label">Avg read time:</span>
+      <span class="stats-value">{{ avg_read_time }} min</span>
+    </div>
+
+    <div class="stats-item">
+      <span class="stats-label">Tags used:</span>
+      <span class="stats-value">{{ total_tags }}</span>
+    </div>
+
+    <div class="stats-item">
+      <span class="stats-label">Since:</span>
+      <span class="stats-value">{{ since_year }}</span>
+    </div>
+  </div>
+</div>

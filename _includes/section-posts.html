@@ -1,0 +1,28 @@
+{% if site.data.settings.posts_section.enable %}
+{% assign posts_limit = site.data.settings.posts_section.limit | default: 5 %}
+<!-- begin posts-section -->
+<div class="container">
+  <section class="section posts-section" id="posts">
+
+    <div class="section__header">
+      <div class="section__info">
+        <span class="section__tagline">cat posts.txt | head -n {{ posts_limit }}</span>
+        <h2 class="section__title">{{ site.data.settings.posts_section.title }}</h2>
+      </div>
+      {% if site.posts.size > posts_limit %}
+      <a class="section__more" href="{{ '/posts' | relative_url }}">&gt; more posts</a>
+      {% endif %}
+    </div>
+
+    <div class="grid grid-gap-7">
+      {% if site.posts.size > 0 %}
+        {% for post in site.posts limit: posts_limit %}
+          {% include article.html class="col col-3 col-d-6 col-t-12" %}
+        {% endfor %}
+      {% endif %}
+    </div>
+
+  </section>
+</div>
+{% endif %}
+<!-- end posts-section -->

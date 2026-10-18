@@ -1,0 +1,26 @@
+{% assign all_labels = "" %}
+{% for project in site.projects %}
+  {% for label in project.labels %}
+    {% assign all_labels = all_labels | append: label | append: "|" %}
+  {% endfor %}
+{% endfor %}
+{% assign unique_labels = all_labels | split: "|" | uniq | sort %}
+
+{% if unique_labels.size > 0 %}
+<div class="widget widget-project-labels">
+  <div class="widget__header">
+    <span class="widget__title">Technologies</span>
+  </div>
+  <div class="tag-cloud">
+    {% for label in unique_labels %}
+      {% assign label_count = 0 %}
+      {% for project in site.projects %}
+        {% if project.labels contains label %}
+          {% assign label_count = label_count | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    <a href="{{ '/projects/' | relative_url }}" class="tag-cloud__link filter-control" data-filter="{{ label | slugify }}">{{ label }} <span>{{ label_count }}</span></a>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

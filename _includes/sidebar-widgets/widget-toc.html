@@ -1,0 +1,13 @@
+{% capture toc_list %}{% include toc.html html=include.content ordered=true class="widget-toc__list" h_min=2 %}{% endcapture %}
+{% assign toc_list = toc_list | strip %}
+
+{% if toc_list != "" %}
+<div class="widget widget-toc">
+  <div class="widget__header">
+    <span class="widget__title">Table of Contents</span>
+  </div>
+  <nav class="widget-toc__nav">
+    {{ toc_list }}
+  </nav>
+</div>
+{% endif %}

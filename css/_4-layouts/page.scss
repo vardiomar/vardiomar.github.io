@@ -1,0 +1,149 @@
+/* Page */
+.page-head {
+  margin-bottom: 32px;
+}
+
+.page-image,
+.page-video {
+  position: relative;
+  margin-bottom: 32px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--color-bg-alt);
+}
+
+.page-image {
+  aspect-ratio: 16/9;
+
+  img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+  }
+}
+
+.page-video {
+  .page-video__wrap {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+
+    iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.page-title {
+  margin-bottom: 12px;
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3.6vw, 44px);
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.15;
+  color: var(--color-text);
+}
+
+.page-description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+  color: color-mix(in srgb, var(--color-text) 60%, transparent);
+}
+
+.hero-page__inner {
+  padding: 32px;
+  margin-bottom: 32px;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-panel-alt);
+
+  .hero-page__title {
+    margin-bottom: 4px;
+    font-size: 48px;
+  }
+
+  .hero-page__description {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 32px;
+
+    .hero-page__title {
+      font-size: 32px;
+    }
+
+    .hero-page__description {
+      font-size: 16px;
+    }
+  }
+}
+
+/* Toc */
+.page__toc {
+  padding: 32px;
+  margin-bottom: 32px;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-panel-alt);
+
+  .page__toc__title {
+    margin-bottom: 24px;
+    padding-bottom: 8px;
+    font-size: 20px;
+    line-height: 1.2;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .page__toc__list {
+    margin-bottom: 0;
+    padding-left: 4px;
+    font-family: var(--font-family-base);
+    color: var(--color-text-dim);
+
+    li {
+      margin-bottom: 16px;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 500;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &>ul,
+      ol {
+        margin-top: 8px;
+        padding-left: 16px;
+      }
+    }
+  }
+}
+
+/* 404 */
+.error {
+  margin-top: 60px;
+  text-align: center;
+
+  .error__title {
+    margin-bottom: 20px;
+    font-size: 140px;
+    line-height: 1;
+  }
+
+  .error__text {
+    color: var(--color-text-dim);
+  }
+
+  @media (max-width: $mobile) {
+    .error__title {
+      font-size: 80px;
+    }
+  }
+}

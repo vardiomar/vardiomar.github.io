@@ -1,0 +1,59 @@
+---
+layout: default
+title: Projects
+description: A collection of things I've built, shipped, and continue to work on.
+permalink: /projects/
+---
+
+<!-- begin projects-page -->
+<section class="section projects-page">
+  <div class="container">
+
+    {% include page-breadcrumb.html %}
+
+    <div class="grid grid-gap-7">
+      <div class="col-8 col-d-12">
+
+        <div class="projects-page__head">
+          <h1 class="projects-page__title">All <span>projects.</span></h1>
+          {% if page.description %}
+          <p class="projects-page__description">{{ page.description }}</p>
+          {% endif %}
+        </div>
+
+        {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+
+        <div class="projects-page__controls">
+          <span class="projects-page__count">{{ sorted_projects.size }} Project{% if sorted_projects.size != 1 %}s{% endif %}</span>
+          <button type="button" class="filter-tab projects-page__sort" data-order="newest">Sort by: Newest</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="grid grid-gap-7">
+
+      <div class="projects-page__main col-8 col-d-12">
+
+        <div class="grid grid-gap-7 projects-page__grid">
+          {% for project in sorted_projects %}
+          {% include project-card.html class="col-6 col-t-12 animate" %}
+          {% endfor %}
+        </div>
+
+        <p class="projects-page__empty is-hidden">No projects match this filter.</p>
+
+      </div>
+
+      <div class="projects-page__sidebar col-4 col-d-12">
+        <aside class="sidebar">
+          {% include sidebar-widgets/widget-project-labels.html %}
+          {% include sidebar-widgets/widget-subscribe.html %}
+          {% include sidebar-widgets/widget-project-stats.html %}
+        </aside>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- end projects-page -->

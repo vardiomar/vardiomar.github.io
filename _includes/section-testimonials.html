@@ -1,0 +1,59 @@
+{% if site.data.settings.testimonials_section.enable %}
+<!-- begin testimonials -->
+<section class="section testimonials-section">
+  <div class="container">
+
+    <div class="section__header">
+      <div class="section__info">
+        {% if site.data.settings.testimonials_section.tagline %}
+        <span class="section__tagline">{{ site.data.settings.testimonials_section.tagline }}</span>
+        {% endif %}
+        <h2 class="section__title">{{ site.data.settings.testimonials_section.title }}</h2>
+      </div>
+      <ul class="controls list-reset" id="customize-controls" aria-label="Slider Navigation" tabindex="0">
+        <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+          <i class="fa-solid fa-chevron-left"></i>
+        </li>
+        <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+          <i class="fa-solid fa-chevron-right"></i>
+        </li>
+      </ul>
+    </div>
+
+    <div class="testimonials__slider my-slider">
+      {% for testimonial__item in site.data.settings.testimonial_items %}
+        <div class="testimonial-item">
+          <div class="testimonial-content">
+            {% if testimonial__item.content %}
+            <p class="client-text">{{ testimonial__item.content }}</p>
+            {% endif %}
+            <div class="client-meta">
+              {% if testimonial__item.image %}
+                <div class="image-container">
+                  <img class="client-avatar" src="{{ testimonial__item.image | relative_url }}" alt="{{ testimonial__item.name }}" loading="lazy">
+                </div>
+              {% endif %}
+              <div class="client-info">
+                {% if testimonial__item.name %}
+                  <h3 class="client-name">
+                    {% if testimonial__item.link %}
+                      <a href="{{testimonial__item.link}}" target="_blank" rel="noopener">{{ testimonial__item.name }}</a>
+                    {% else %}
+                      {{ testimonial__item.name }}
+                    {% endif %}
+                  </h3>
+                {% endif %}
+                {% if testimonial__item.designation %}
+                  <p class="client-designation">{{ testimonial__item.designation }}</p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+<!-- end testimonials -->
+{% endif %}

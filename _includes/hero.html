@@ -1,0 +1,156 @@
+{% if site.data.settings.hero.enable == true %}
+
+  {% assign total_posts = site.posts | size %}
+  {% assign total_tags = site.tags | size %}
+
+  {% assign total_words = 0 %}
+  {% for post in site.posts %}
+    {% assign words = post.content | strip_html | number_of_words %}
+    {% assign total_words = total_words | plus: words %}
+  {% endfor %}
+
+  {% if total_words >= 1000 %}
+    {% assign displayed_words = total_words | divided_by: 1000 | append: "k" %}
+  {% else %}
+    {% assign displayed_words = total_words %}
+  {% endif %}
+
+  {% if total_posts > 0 %}
+    {% assign avg_words_per_post = total_words | divided_by: total_posts %}
+    {% assign avg_read_time = avg_words_per_post | divided_by: 200 %}
+    {% if avg_read_time == 0 %}{% assign avg_read_time = 1 %}{% endif %}
+  {% else %}
+    {% assign avg_read_time = 0 %}
+  {% endif %}
+
+  {% if total_posts > 0 %}
+    {% assign oldest_post = site.posts | last %}
+    {% assign since_year = oldest_post.date | date: "%Y" %}
+  {% else %}
+    {% assign since_year = "2026" %}
+  {% endif %}
+
+<!-- begin hero -->
+<section class="hero" id="hero">
+  <div class="container">
+
+    <div class="hero__inner grid grid-gap-d-8">
+
+      <div class="hero__left{% if site.data.settings.hero.terminal.enable == true %} col-6 col-d-12{% else %} hero__left--big col-12{% endif %}">
+        {% if site.data.settings.author.username or site.data.settings.hero.command %}
+        <div class="hero__prompt section__prompt">
+          <span class="section__prompt__user">{{ site.data.settings.author.username }}@{{
+            site.data.settings.author.hostname }}</span>
+          <span class="section__prompt__separator">~</span>
+          <span class="section__prompt__separator">$</span>
+          {% if site.data.settings.hero.command %}
+          <span class="section__prompt__command">{{ site.data.settings.hero.command }}</span>
+          {% endif %}
+          <span class="section__prompt__cursor cursor-blink"></span>
+        </div>
+        {% endif %}
+
+        <h1 class="hero__title glitch" {% if site.data.settings.hero.title_size %}style="font-size: clamp({{ site.data.settings.hero.title_size }});"{% endif %}>{{ site.data.settings.hero.title }}</h1>
+
+        {% if site.data.settings.hero.description %}
+        <div class="hero__description">{{ site.data.settings.hero.description | markdownify }}</div>
+        {% endif %}
+
+        <div class="hero__buttons">
+          <a class="button button--primary" href="#projects">ls projects/</a>
+        </div>
+      </div>
+
+      {% if site.data.settings.hero.terminal.enable == true %}
+      <div class="hero__right col-6 col-d-12">
+        <div class="terminal">
+
+          <div class="terminal__bar">
+            <div class="terminal__dots">
+              <div class="terminal__dot red"></div>
+              <div class="terminal__dot amber"></div>
+              <div class="terminal__dot green"></div>
+            </div>
+            <div class="terminal-title">{{ site.data.settings.author.username }}@{{ site.data.settings.author.hostname
+            }}: ~ terminal</div>
+          </div>
+
+          <div class="terminal__body">
+            <div class="terminal__output" id="terminalOutput">
+              <div class="terminal__welcome">
+                <div class="terminal__output-block">
+
+                  <div class="t-line">
+                    <span class="t-accent">{{ site.data.settings.author.username }}@{{ site.data.settings.author.hostname }}</span>
+                    <span class="t-dim">~</span>
+                    <span class="t-dim">$</span>&nbsp;whoami --verbose
+                  </div>
+
+                  {% if site.data.settings.author.name %}
+                  <div class="t-line">
+                    <span class="t-dim">name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>"<span class="t-accent-alt">{{ site.data.settings.author.name }}</span>"
+                  </div>
+                  {% endif %}
+
+                  {% if site.data.settings.author.role %}
+                  <div class="t-line">
+                    <span class="t-dim">role:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>"<span class="t-mid">{{ site.data.settings.author.role }}</span>"
+                  </div>
+                  {% endif %}
+
+                  {% if site.data.settings.author.email %}
+                  <div class="t-line">
+                    <span class="t-dim">email:&nbsp;&nbsp;&nbsp;&nbsp;</span>"<span class="t-mid">{{ site.data.settings.author.email }}</span>"
+                  </div>
+                  {% endif %}
+
+                  {% if site.data.settings.author.skills.size > 0 %}
+                  <div class="t-line">
+                    <span class="t-dim">stack:&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="t-accent-alt">[{% for skill in site.data.settings.author.skills limit:3 %}"{{ skill.name }}"{% unless forloop.last %}, {% endunless %}{% endfor %}]</span>
+                  </div>
+                  {% endif %}
+
+                  {% assign status = site.data.settings.author.status %}
+                  {% if status == 'busy' %}
+                    {% assign status_text = 'BUSY' %}
+                    {% assign status_class = 't-error' %}
+                  {% elsif status == 'open_to_offers' %}
+                    {% assign status_text = 'OPEN TO OFFERS' %}
+                    {% assign status_class = 't-warning' %}
+                  {% else %}
+                    {% assign status_text = 'AVAILABLE' %}
+                    {% assign status_class = 't-accent' %}
+                  {% endif %}
+
+                  <div class="t-line">
+                    <span class="t-dim">status:&nbsp;&nbsp;</span>
+                    <span class="{{ status_class }}">{{ status_text }}</span>&nbsp;<span class="t-status-dot" style="background: var(--color-{% if status == 'busy' %}error{% elsif status == 'open_to_offers' %}warning{% else %}accent{% endif %}); box-shadow: 0 0 5px var(--color-{% if status == 'busy' %}error{% elsif status == 'open_to_offers' %}warning{% else %}accent{% endif %});"></span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="terminal__hint">
+              Type a command and press [ENTER]&nbsp;|&nbsp;try: <kbd>help</kbd>, <kbd>about</kbd>, <kbd>contact</kbd>, <kbd>skills</kbd>
+            </div>
+
+            <div class="terminal__input-row">
+              <label class="terminal__input-label" for="terminalInput">
+                <span class="terminal__prompt-user">{{ site.data.settings.author.username }}@{{ site.data.settings.author.hostname }}</span>
+                <span class="terminal__prompt-separator">&nbsp;~&nbsp;$&nbsp;</span>
+              </label>
+              <input class="terminal__input" id="terminalInput" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="enter command...">
+            </div>
+          </div>
+
+        </div>
+      </div>
+      {% endif %}
+
+    </div>
+
+  </div>
+</section>
+<!-- end hero -->
+{% endif %}

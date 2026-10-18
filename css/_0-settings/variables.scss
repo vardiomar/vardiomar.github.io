@@ -1,0 +1,32 @@
+// *****************
+// Global Variables
+// *****************
+
+:root {
+  --spacing-base: 16px;
+  --radius-global: 3px;
+  --transition-global: all .3s ease;
+
+  // Typography
+  --font-display: 'Syne', Helvetica, Arial, sans-serif;
+  --font-mono: 'IBM Plex Mono', "Courier New", "Lucida Console", Monaco, monospace;
+
+  --font-family-base: var(--font-mono);
+  --font-size-base: 16px;
+  --font-style-base: normal;
+  --line-height-base: 1.6;
+  --letter-spacing-base: normal;
+
+  // Headings
+  --heading-font-family: var(--font-family-base);
+  --heading-font-weight: 700;
+  --heading-line-height: 1.3;
+  --heading-letter-spacing: normal;
+
+  --text-h1: 36px;
+  --text-h2: 28px;
+  --text-h3: 24px;
+  --text-h4: 20px;
+  --text-h5: 18px;
+  --text-h6: 16px;
+}

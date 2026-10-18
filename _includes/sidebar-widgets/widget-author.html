@@ -1,0 +1,35 @@
+{% assign author = site.data.settings.author %}
+<div class="widget widget-author">
+  <div class="widget__header">
+    <span class="widget__title">Author</span>
+  </div>
+  <div class="widget-author__body">
+    {% if author.avatar_image %}
+    <a href="{{ '/about/' | relative_url }}" class="widget-author__image">
+      <img class="lazy" data-src="{{ author.avatar_image | relative_url }}" alt="{{ author.name }}">
+    </a>
+    {% endif %}
+
+    <a href="{{ '/about/' | relative_url }}" class="widget-author__name">{{ author.name }}</a>
+    {% if author.role %}
+    <span class="widget-author__role">{{ author.role }}</span>
+    {% endif %}
+
+    {% if author.bio %}
+    <p class="widget-author__bio">{{ author.bio }}</p>
+    {% endif %}
+
+    <ul class="widget-author__social list-reset">
+      {% for social in author.social %}
+      <li>
+        <a href="{{ social.link }}" target="_blank" rel="noopener" aria-label="Social link"><i class="{{ social.icon }}"></i></a>
+      </li>
+      {% endfor %}
+      {% if author.email %}
+      <li>
+        <a href="mailto:{{ author.email }}" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+</div>

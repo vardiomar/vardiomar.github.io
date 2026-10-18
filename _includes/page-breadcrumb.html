@@ -1,0 +1,9 @@
+<div class="page-breadcrumb">
+  <a href="{{ '/' | relative_url }}" class="page-breadcrumb__item">Home</a>
+  <span class="page-breadcrumb__separator">&gt;</span>
+  {% if include.parent_label %}
+  <a href="{{ include.parent_url | relative_url }}" class="page-breadcrumb__item">{{ include.parent_label }}</a>
+  <span class="page-breadcrumb__separator">&gt;</span>
+  {% endif %}
+  <span class="page-breadcrumb__item is-active">{{ include.current | default: page.title }}</span>
+</div>

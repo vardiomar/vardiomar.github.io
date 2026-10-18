@@ -1,0 +1,102 @@
+---
+layout: default
+---
+
+<!-- begin project -->
+<section class="section project-page">
+  <div class="container">
+
+    <div class="grid grid-gap-7">
+      <div class="col-8 col-d-12">
+
+        {% include page-breadcrumb.html current=page.title parent_label="Projects" parent_url="/projects/" %}
+
+        <div class="project-head">
+          <div class="project-head__top">
+            {% if page.labels.size >= 1 %}
+            <div class="project-labels">
+              {% for label in page.labels %}
+              <span class="project-labels__item">{{ label }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
+
+            <div class="project-head__meta">
+              <time datetime="{{ page.date | date_to_xmlschema }}">{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}{{ page.date | date: date_format }}</time>
+            </div>
+          </div>
+
+          <h1 class="project-title">{{ page.title | escape }}</h1>
+
+          {% if page.subtitle %}
+          <p class="project-description">{{ page.subtitle }}</p>
+          {% elsif page.description %}
+          <p class="project-description">{{ page.description }}</p>
+          {% endif %}
+        </div>
+
+      </div>
+    </div>
+
+    <div class="grid grid-gap-7">
+
+      <div class="project-page__main col-8 col-d-12">
+
+        {% if page.video_embed %}
+        <div class="project-video">
+          <div class="project-video__wrap">
+            <iframe src="{{ page.video_embed }}" loading="lazy" width="640" height="360" frameborder="0"
+              webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+        </div>
+        {% elsif page.image %}
+        <div class="project-image">
+          <img class="lazy" data-src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+        </div>
+        {% endif %}
+
+        {% if page.image_caption %}
+        <div class="image-caption">{{ page.image_caption | markdownify | replace: '<p>' | replace: '</p>' }}</div>
+        {% endif %}
+
+        <article class="project">
+          <div class="project-content">
+            {{ content }}
+          </div>
+        </article>
+
+        {% include share-buttons.html %}
+
+       {% if page.previous.url %}
+        <div class="project-nav">
+          <a href="{{ page.previous.url | relative_url }}" class="project-nav__link">
+            <div class="project-nav__box">
+              <span class="project-nav__label">Next Project <i class="fa-solid fa-arrow-right"></i></span>
+              <h2 class="project-nav__title">{{ page.previous.title }}</h2>
+            </div>
+            {% if page.previous.image %}
+            <span class="project-nav__image">
+              <img class="lazy" data-src="{{ page.previous.image | relative_url }}" alt="{{ page.previous.title }}">
+            </span>
+            {% endif %}
+          </a>
+        </div>
+        {% endif %}
+
+      </div>
+
+      <div class="project-page__sidebar col-4 col-d-12">
+        <aside class="sidebar">
+          {% if page.toc == true %}
+          {% include sidebar-widgets/widget-toc.html content=content %}
+          {% endif %}
+          {% include sidebar-widgets/widget-author.html %}
+          {% include sidebar-widgets/widget-subscribe.html %}
+          {% include sidebar-widgets/widget-project-stats.html %}
+        </aside>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- end project -->

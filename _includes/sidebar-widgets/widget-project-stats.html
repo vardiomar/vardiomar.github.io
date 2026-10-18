@@ -1,0 +1,39 @@
+<div class="widget widget-stats">
+  <div class="widget__header">
+    <span class="widget__title">Project Stats</span>
+  </div>
+
+  {% assign total_projects = site.projects | size %}
+
+  {% assign all_labels = "" %}
+  {% for project in site.projects %}
+    {% for label in project.labels %}
+      {% assign all_labels = all_labels | append: label | append: "|" %}
+    {% endfor %}
+  {% endfor %}
+  {% assign total_technologies = all_labels | split: "|" | uniq | size %}
+
+  {% if total_projects > 0 %}
+    {% assign oldest_project = site.projects | sort: 'date' | first %}
+    {% assign since_year = oldest_project.date | date: "%Y" %}
+  {% else %}
+    {% assign since_year = "2026" %}
+  {% endif %}
+
+  <div class="stats-list">
+    <div class="stats-item">
+      <span class="stats-label">Total projects:</span>
+      <span class="stats-value">{{ total_projects }}</span>
+    </div>
+
+    <div class="stats-item">
+      <span class="stats-label">Technologies used:</span>
+      <span class="stats-value">{{ total_technologies }}</span>
+    </div>
+
+    <div class="stats-item">
+      <span class="stats-label">Since:</span>
+      <span class="stats-value">{{ since_year }}</span>
+    </div>
+  </div>
+</div>

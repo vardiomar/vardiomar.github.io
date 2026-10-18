@@ -1,30 +1,31 @@
 ---
 layout: page
-title: "📨 Contact & Links"
-feature_image: "https://picsum.photos/2560/600?image=866"
-feature_text: |
-  ## Omar Vardi
-  Cybersecurity Specialist | GIAC Certified | U.S. Navy Veteran
+title: "About & Contact"
+description: "Cybersecurity Specialist | GIAC Certified | U.S. Navy Veteran"
+permalink: /about/
+toc: true
 ---
 
+<a id="top"></a>
 <a id="contact"></a>
 
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:amayvardi@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/omarvardi)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vardiomar)
 [![Resume](https://img.shields.io/badge/Resume-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](/Omar_Resume_2026.pdf)
-[![Projects](https://img.shields.io/badge/Projects-0A66C2?style=for-the-badge&logo=readthedocs&logoColor=white)](/projects)
+[![Projects](https://img.shields.io/badge/Projects-0A66C2?style=for-the-badge&logo=readthedocs&logoColor=white)](/projects/)
+
 ---
 
 ## Introduction
 
-Hi there! 
+Hi there!
 Thank you for visiting my GitHub.io page. This page documents my Cybersecurity journey. On this page, I provide brief descriptions of my projects and links to the full documentation for what I built or did. I recently transferred from SANS Technology, where I earned multiple GIAC certifications, and I am now a junior at Old Dominion University. So far the journey has been hard and fun, but what's most important that keeps me going is my passion and curiosity for cybersecurity especially now that I am looking to niche into DFIR.
 
 ---
 
 ## Applied Skills
- 
+
 **Operating Systems & Virtualization:**
 ![Windows Server](https://img.shields.io/badge/Windows%20Server-0078D6?style=flat-square&logo=windows-server&logoColor=white)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white)
@@ -44,6 +45,7 @@ Configured segmented virtual networks using TCP/IP, VLANs, DNS, DHCP, and pfSens
 ![Metasploit](https://img.shields.io/badge/Metasploit-FF4400?style=flat-square&logo=metasploit&logoColor=white)
 
 Deployed and configured Splunk, Security Onion (Zeek, Suricata, Elastic Stack), Sysmon, and LimaCharlie EDR to centralize logs and monitor endpoint telemetry.
+
 - Built detection rules aligned to MITRE ATT&CK techniques
 - Investigated simulated C2 beaconing and credential dumping activity
 - Tuned detection logic to reduce false positives
@@ -57,13 +59,13 @@ Simulated adversary behavior using Metasploit and Sliver C2 frameworks to unders
 
 ## Education
 
-**SANS Technology Institute**
+**SANS Technology Institute**<br>
 Bachelor’s in Applied Cybersecurity (Expected Dec 2026)
 
-**Sentara College of Health Science**
+**Sentara College of Health Science**<br>
 Associate of Science – Surgical Technology (2023)
 
-**United States Navy**
+**United States Navy**<br>
 Machinery Technician Training (2017–2021)
 
 ---
@@ -81,16 +83,19 @@ Machinery Technician Training (2017–2021)
 ## Professional Experience
 
 **Surgical Technologist – Virginia Beach Ambulatory Surgery Center (2023–Present)**
+
 - Applied risk management principles in high-stakes environments
 - Managed sensitive data with strict confidentiality
 - Operated advanced technical systems with precision and compliance
 
 **Machinery Technician – United States Navy (2017–2021)**
+
 - Led mission-critical operational teams
 - Diagnosed and repaired complex mechanical & electrical systems
 - Maintained detailed compliance and operational documentation
 
 **Shift Manager – Burger King (2015–2017)**
+
 - Managed high-volume operational workflows
 - Provided customer-facing technical troubleshooting & support
 
@@ -98,13 +103,11 @@ Machinery Technician Training (2017–2021)
 
 ## View My Work
 
-🔗 GitHub Projects: https://github.com/vardiomar
-🔗 LinkedIn: https://linkedin.com/in/omarvardi
+🔗 GitHub Projects: [github.com/vardiomar](https://github.com/vardiomar)<br>
+🔗 LinkedIn: [linkedin.com/in/omarvardi](https://linkedin.com/in/omarvardi)
 
 ---
 
 _Thank you for visiting my portfolio._
-
----
 
 <p align="right"><a href="#top">⬆ Back to Top</a></p>

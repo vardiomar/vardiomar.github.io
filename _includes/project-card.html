@@ -1,0 +1,31 @@
+<article class="project-card{% if include.class %} {{ include.class }}{% endif %}" data-labels="{% for label in project.labels %}{{ label | slugify }}{% unless forloop.last %},{% endunless %}{% endfor %}">
+
+  {% if project.image %}
+  <div class="project-card__image">
+    <img class="lazy" data-src="{{ project.image | relative_url }}" alt="{{ project.title }}" width="200" height="160">
+  </div>
+  {% endif %}
+
+  <div class="project-card__content">
+    <h3 class="project-card__title" id="project-{{ project.slug }}-title">
+      <a href="{{ project.url }}">{{ project.title }}</a>
+    </h3>
+
+    {% if project.description %}
+    <p class="project-card__description">{{ project.description }}</p>
+    {% endif %}
+
+    {% if project.labels %}
+    <div class="project-card__labels">
+      {% for label in project.labels %}
+      <span class="project-label">{{ label }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+
+  <div class="project-card__arrow">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="var(--bg-color)"><path fill="var(--bg-color)" d="m5.99 16.596l8.192-8.192H7.818v-2h9.778v9.778h-2V9.818L7.403 18.01L5.99 16.596Z"/></svg>
+  </div>
+
+</article>
